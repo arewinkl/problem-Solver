@@ -52,3 +52,21 @@ function nameShuffler(str) {
 
   return newStr;
 }
+
+// A Narcissistic Number is a number of length n in which the sum of its digits to the power of n is equal to the original number. If this seems confusing, refer to the example below.
+// Ex: 153, where n = 3 (number of digits in 153)
+// 13 + 53 + 33 = 153
+function isNarcissistic(n) {
+  //your code here
+  const newString = n.toString().split("");
+  let count = 0;
+  for (let i = 0; i < newString.length; i++) {
+    count += newString[i] ** newString.length;
+  }
+  console.log(count);
+  if (count === n) {
+    return true;
+  } else {
+    return false;
+  }
+}
