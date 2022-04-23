@@ -87,3 +87,17 @@ function stringClean(s) {
   }
   return newArray.join("");
 }
+
+function squareOrSquareRoot(array) {
+  const newArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (Math.sqrt(array[i]) - Math.floor(Math.sqrt(array[i])) == 0) {
+      newArray.push(Math.sqrt(array[i]));
+    } else {
+      newArray.push(array[i] ** 2);
+    }
+  }
+
+  return newArray;
+}
