@@ -107,7 +107,7 @@ function squareOrSquareRoot(array) {
   return newArray;
 }
 
-// Complete the function which converts a binary number (given as a string) to a decimal number.
+// Complete the function which converts a binary number (given as a string) to a decimal number. takes the first number which is the length of the string and adds it to the sum of the values in the string.
 function binToDec(bin) {
   const newArray = [];
   const newBin = bin.split("");
