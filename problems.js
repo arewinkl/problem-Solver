@@ -178,3 +178,7 @@ function solution(a, b) {
     return a + b + a;
   }
 }
+//? Here is another solution that uses a turnery to solve the problem and return a different solution based on the length of the strings.
+function solution(a, b) {
+  return a.length < b.length ? a + b + a : b + a + b;
+}
