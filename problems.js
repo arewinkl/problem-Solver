@@ -155,3 +155,14 @@ function magNumber(info) {
     return Math.ceil(bullets / PSG1);
   }
 }
+//? A second solution would be to create a new object of info for the weapons and pass it into the problem as weapons[info[0]].
+function magNumber(info) {
+  const weapons = {
+    PT92: 17,
+    M4A1: 30,
+    M16A2: 30,
+    PSG1: 5,
+  };
+  console.log(weapons[info[0]]);
+  return Math.ceil((info[1] * 3) / weapons[info[0]]);
+}
