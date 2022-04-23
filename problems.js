@@ -182,3 +182,13 @@ function solution(a, b) {
 function solution(a, b) {
   return a.length < b.length ? a + b + a : b + a + b;
 }
+
+function openOrSenior(data) {
+  const newArray = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i][0] >= 55 && data[i][1] > 7) {
+      newArray.push("Senior");
+    } else newArray.push("Open");
+  }
+  return newArray;
+}
