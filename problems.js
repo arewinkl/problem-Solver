@@ -127,3 +127,24 @@ function binToDec(bin) {
     return parseInt(newArray.join(""));
   }
 }
+
+function magNumber(info) {
+  const PT92 = 17;
+  const M4A1 = 30;
+  const M16A2 = 30;
+  const PSG1 = 5;
+
+  if (info[0] == "PT92") {
+    let bullets = info[1] * 3;
+    return Math.ceil(bullets / PT92);
+  } else if (info[0] == "M4A1") {
+    let bullets = info[1] * 3;
+    return Math.ceil(bullets / M4A1);
+  } else if (info[0] == "M16A2") {
+    let bullets = info[1] * 3;
+    return Math.ceil(bullets / M16A2);
+  } else if (info[0] == "PSG1") {
+    let bullets = info[1] * 3;
+    return Math.ceil(bullets / PSG1);
+  }
+}
