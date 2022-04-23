@@ -106,3 +106,23 @@ function squareOrSquareRoot(array) {
 
   return newArray;
 }
+
+function binToDec(bin) {
+  const newArray = [];
+  const newBin = bin.split("");
+  const length = bin.split("").length;
+  let total = 0;
+
+  for (let i = 0; i < bin.length; i++) {
+    if (newBin[i] == 1) {
+      total++;
+    }
+  }
+  newArray.push(length);
+  newArray.push(total);
+  if (length < 2) {
+    return parseInt(bin.split("")[0]);
+  } else {
+    return parseInt(newArray.join(""));
+  }
+}
