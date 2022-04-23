@@ -166,3 +166,11 @@ function magNumber(info) {
   console.log(weapons[info[0]]);
   return Math.ceil((info[1] * 3) / weapons[info[0]]);
 }
+
+function solution(a, b) {
+  if (a.length > b.length) {
+    return b + a + b;
+  } else {
+    return a + b + a;
+  }
+}
