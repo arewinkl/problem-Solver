@@ -194,3 +194,40 @@ function openOrSenior(data) {
   }
   return newArray;
 }
+
+function barista(coffees) {
+  console.log(coffees);
+  const newCoffee = coffees.sort(function (a, b) {
+    return a - b;
+  });
+  const prepTime = [];
+  const time = [];
+
+  for (let i = 0; i < newCoffee.length - 1; i++) {
+    if (i == 0) {
+      prepTime.push(newCoffee[0]);
+    }
+    prepTime.push(newCoffee[i + 1] + 2);
+  }
+  time.push(prepTime[0]);
+
+  if (coffees.length < 1) {
+    console.log(0);
+    return 0;
+  } else if (coffees.length == 1) {
+    return coffees[0];
+  } else if (coffees.length > 1) {
+    prepTime.reduce(function myFunc(a, b) {
+      time.push(a + b);
+      return a + b;
+    });
+    console.log(
+      time.reduce(function allDone(a, b) {
+        return a + b;
+      })
+    );
+    return time.reduce(function allDone(a, b) {
+      return a + b;
+    });
+  }
+}
