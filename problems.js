@@ -287,3 +287,21 @@ function stringy(size) {
 }
 //? The example below is a second way to solve this problem. it is deconstructed since it takes in only one parameter. What it does is repeats the string "10" the number of times size, and then it slices off all other numbers except for the first three. it starts at index [0] and then keeps the specific number of elements passed in which was size (3).
 const stringy = (size) => "10".repeat(size).slice(0, size);
+
+const rps = (p1, p2) => {
+  if (p1 == "rock" && p2 == "scissors") {
+    return "Player 1 won!";
+  } else if (p1 == "rock" && p2 == "paper") {
+    return "Player 2 won!";
+  } else if (p1 == "paper" && p2 == "rock") {
+    return "Player 1 won!";
+  } else if (p1 == "paper" && p2 == "scissors") {
+    return "Player 2 won!";
+  } else if (p1 == "scissors" && p2 == "rock") {
+    return "Player 2 won!";
+  } else if (p1 == "scissors" && p2 == "paper") {
+    return "Player 1 won!";
+  } else {
+    return "Draw!";
+  }
+};
