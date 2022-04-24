@@ -217,7 +217,6 @@ function barista(coffees) {
   time.push(prepTime[0]);
 
   if (coffees.length < 1) {
-    console.log(0);
     return 0;
   } else if (coffees.length == 1) {
     return coffees[0];
@@ -226,11 +225,6 @@ function barista(coffees) {
       time.push(a + b);
       return a + b;
     });
-    console.log(
-      time.reduce(function allDone(a, b) {
-        return a + b;
-      })
-    );
     return time.reduce(function allDone(a, b) {
       return a + b;
     });
