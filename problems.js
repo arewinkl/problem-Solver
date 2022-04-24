@@ -285,3 +285,5 @@ function stringy(size) {
   }
   return newArray.join("");
 }
+//? The example below is a second way to solve this problem. it is deconstructed since it takes in only one parameter. What it does is repeats the string "10" the number of times size, and then it slices off all other numbers except for the first three. it starts at index [0] and then keeps the specific number of elements passed in which was size (3).
+const stringy = (size) => "10".repeat(size).slice(0, size);
