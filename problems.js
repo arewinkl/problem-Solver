@@ -311,3 +311,20 @@ const rps = (p1, p2) => {
     return "Draw!";
   }
 };
+
+//? Here is another solution that uses a turnery to evaluate the rock,paper,scissors case. If it matches then player 1 wins but if they are identical its a draw and otherwise player 2 wins the game.
+const rps = (p1, p2) => {
+  const rules = {
+    scissors: "paper",
+    rock: "scissors",
+    paper: "rock",
+  };
+  console.log(p1, p2);
+  console.log(rules[p1]);
+  console.log(rules[p1] === p2);
+  return rules[p1] === p2
+    ? "Player 1 won!"
+    : p1 === p2
+    ? "Draw!"
+    : "Player 2 won!";
+};
