@@ -269,3 +269,16 @@ function findMultiples(int, limit) {
   }
   return arr;
 }
+
+function stringy(size) {
+  let newArray = [];
+
+  for (let i = 1; i < size + 1; i++) {
+    if (i / 2 === Math.floor(i / 2)) {
+      newArray.push("0");
+    } else {
+      newArray.push("1");
+    }
+  }
+  return newArray.join("");
+}
