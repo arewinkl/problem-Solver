@@ -342,3 +342,5 @@ function toFreud(string) {
     return str;
   }
 }
+//? here is a second solution that uses regex to create the string. Want to pass in the string length and replace it with the regex string.
+let toFreud = (s) => s.replace(/\w+/g, "sex");
