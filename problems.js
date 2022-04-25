@@ -367,3 +367,12 @@ function dropCap(n) {
   }
   return newArray.join(" ");
 }
+//? This second solution uses a .map(). it maps over the string and if it is longer that 2 characters long it will uppercase the first index, and then it will lower case the rest of the string and return it with the string joined together again.
+function dropCap(str) {
+  return str
+    .split(" ")
+    .map(function (w) {
+      return w.length > 2 ? w[0].toUpperCase() + w.slice(1).toLowerCase() : w;
+    })
+    .join(" ");
+}
