@@ -328,3 +328,14 @@ const rps = (p1, p2) => {
     ? "Draw!"
     : "Player 2 won!";
 };
+
+function toFreud(string) {
+  const length = string.split(" ").length;
+  if (string === "") {
+    return string;
+  } else {
+    const newString = "sex ".repeat(length);
+    const str = newString.substring(0, newString.length - 1);
+    return str;
+  }
+}
