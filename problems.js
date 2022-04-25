@@ -344,3 +344,20 @@ function toFreud(string) {
 }
 //? here is a second solution that uses regex to create the string. Want to pass in the string length and replace it with the regex string.
 let toFreud = (s) => s.replace(/\w+/g, "sex");
+
+function dropCap(n) {
+  const words = n.split(" ");
+  const letters = words[0].split("");
+  const newArray = [];
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].split("").length <= 2) {
+      newArray.push(words[i]);
+    } else {
+      newArray.push(
+        words[i].split("")[0].toUpperCase() + words[i].toLowerCase().slice(1)
+      );
+    }
+  }
+  return newArray.join(" ");
+}
