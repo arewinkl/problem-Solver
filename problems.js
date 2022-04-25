@@ -376,3 +376,13 @@ function dropCap(str) {
     })
     .join(" ");
 }
+
+function removeEveryOther(arr) {
+  const newArray = [];
+  for (let x = 0; x < arr.length; x++) {
+    if (x % 2 === 0) {
+      newArray.push(arr[x]);
+    }
+  }
+  return newArray;
+}
