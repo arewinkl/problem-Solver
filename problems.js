@@ -390,3 +390,8 @@ function removeEveryOther(arr) {
   }
   return newArray;
 }
+
+function root(x, n) {
+  console.log(x, n);
+  return x ** (1 / n);
+}
