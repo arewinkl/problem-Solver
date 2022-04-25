@@ -402,3 +402,9 @@ function root(x, n) {
   console.log(x, n);
   return x ** (1 / n);
 }
+
+function squareArea(A) {
+  const radius = (A * 4) / (2 * Math.PI);
+  const answer = (radius * radius).toFixed(2);
+  return parseFloat(answer);
+}
