@@ -345,6 +345,13 @@ function toFreud(string) {
 //? here is a second solution that uses regex to create the string. Want to pass in the string length and replace it with the regex string.
 let toFreud = (s) => s.replace(/\w+/g, "sex");
 
+// DropCaps means that the first letter of the starting word of the paragraph should be in caps and the remaining lowercase, just like you see in the newspaper.
+// But for a change, let"s do that for each and every word of the given String. Your task is to capitalize every word that has length greater than 2, leaving smaller words as they are.
+// *should work also on Leading and Trailing Spaces and caps.
+// "apple"            => "Apple"
+// "apple of banana"  => "Apple of Banana"
+// "one   space"      => "One   Space
+// "   space WALK   " => "   Space Walk   "
 function dropCap(n) {
   const words = n.split(" ");
   const letters = words[0].split("");
