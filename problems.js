@@ -354,7 +354,6 @@ let toFreud = (s) => s.replace(/\w+/g, "sex");
 // "   space WALK   " => "   Space Walk   "
 function dropCap(n) {
   const words = n.split(" ");
-  const letters = words[0].split("");
   const newArray = [];
 
   for (let i = 0; i < words.length; i++) {
