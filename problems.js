@@ -417,3 +417,7 @@ function multiply(a, b) {
   return a * b;
   // Write here your multiply-function
 }
+
+function stringToArray(string) {
+  return string.split(" ");
+}
