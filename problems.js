@@ -425,3 +425,10 @@ function multiply(a, b) {
 function stringToArray(string) {
   return string.split(" ");
 }
+
+function squareAreaToCircle(size) {
+  const radius = size ** (1 / 2) / 2;
+  const circle = Math.PI * radius ** 2;
+
+  return circle;
+}
