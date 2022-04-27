@@ -437,3 +437,12 @@ function squareAreaToCircle(size) {
 
   return circle;
 }
+
+function chain(input, fs) {
+  return fs.reduce(function (a, b) {
+    console.log(b(a));
+    console.log(b);
+    console.log(a);
+    return b(a);
+  }, input);
+}
