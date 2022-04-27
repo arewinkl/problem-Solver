@@ -462,3 +462,13 @@ function sum(array) {
     return a + b;
   });
 }
+
+function bestPrice(array) {
+  //enter code here
+  console.log(array);
+  return (
+    array.reduce(function (a, b) {
+      return a + b;
+    }) / array.length
+  );
+}
