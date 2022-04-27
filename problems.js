@@ -484,6 +484,7 @@ function bestPrice(array) {
 // If one of them is 0, and the other one is 1,
 // remove these two digits from the string.
 // What is the length of the smallest string that you can get after applying this operation multiple times?
+//? The for loop is asking if the two index values match add one to out and then loop to the next index.....but if they dont match it wants the for loop to skip tow ahead because those two matching up forces it to cancel each other out.
 function zeroAndOne(s) {
   console.log(s);
   let out = 0;
