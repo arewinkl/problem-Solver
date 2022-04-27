@@ -499,6 +499,13 @@ function zeroAndOne(s) {
   return out;
 }
 
+// Kata Task
+// I have a cat and a dog which I got as kitten / puppy.
+// I forget when that was, but I do know their current ages as catYears and dogYears.
+// Find how long I have owned each of my pets and return as a list [ownedCat, ownedDog]
+// NOTES:
+// Results are truncated whole numbers of "human" years
+//? You can perform all of the math within the array itself so that it gets returned in the correct format for the problem (had no idea that this was a strategy)
 const ownedCatAndDog = (catYears, dogYears) => [
   Math.floor(catYears < 24 ? catYears / 15 : (catYears - 16) / 4),
   Math.floor(dogYears < 24 ? dogYears / 15 : (dogYears - 14) / 5),
