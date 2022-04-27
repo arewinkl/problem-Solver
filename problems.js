@@ -478,6 +478,12 @@ function bestPrice(array) {
   );
 }
 
+// Task
+// You have a string of length n consisting of zeroes and ones. Consider the following operation:
+// Choose any two adjacent positions in the string
+// If one of them is 0, and the other one is 1,
+// remove these two digits from the string.
+// What is the length of the smallest string that you can get after applying this operation multiple times?
 function zeroAndOne(s) {
   console.log(s);
   let out = 0;
