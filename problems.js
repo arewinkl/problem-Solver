@@ -441,6 +441,12 @@ function squareAreaToCircle(size) {
 // Write a generic function chainer
 // Write a generic function chainer that takes a starting value, and an array of functions to execute on it (array of symbols for ruby).
 // The input for each function is the output of the previous function (except the first function, which takes the starting value as it's input). Return the final value after execution is complete.
+//? Practice working with the reduce method, understand how it works with an array while its also updating a variable that is being used. There are two parts to the reducer. The Accumulator and the updated current value.
+//! const numbers = [175, 50, 25];
+//! document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+//! function myFunc(total, num) {
+//!  return total - num;
+//! }
 function chain(input, fs) {
   return fs.reduce(function (a, b) {
     console.log(b(a));
