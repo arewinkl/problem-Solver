@@ -411,3 +411,8 @@ function squareArea(A) {
   const answer = (radius * radius).toFixed(2);
   return parseFloat(answer);
 }
+
+function multiply(a, b) {
+  return a * b;
+  // Write here your multiply-function
+}
