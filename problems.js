@@ -498,3 +498,8 @@ function zeroAndOne(s) {
   //coding and coding..
   return out;
 }
+
+const ownedCatAndDog = (catYears, dogYears) => [
+  Math.floor(catYears < 24 ? catYears / 15 : (catYears - 16) / 4),
+  Math.floor(dogYears < 24 ? dogYears / 15 : (dogYears - 14) / 5),
+];
