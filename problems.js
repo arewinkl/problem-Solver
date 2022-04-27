@@ -412,6 +412,7 @@ function squareArea(A) {
   return parseFloat(answer);
 }
 
+// Implement a function which multiplies two numbers.
 function multiply(a, b) {
   return a * b;
   // Write here your multiply-function
