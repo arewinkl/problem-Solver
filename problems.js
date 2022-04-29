@@ -545,3 +545,7 @@ function plural(n) {
     return true;
   }
 }
+//?
+function plural(n) {
+  return n === 1 ? false : true;
+}
