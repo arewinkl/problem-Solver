@@ -530,3 +530,15 @@ function mergeArrays(arr1, arr2) {
 
   return newestArray;
 }
+
+function plural(n) {
+  if (n == 0) {
+    return true;
+  } else if (n > 0 && n < 1) {
+    return true;
+  } else if (n == 1) {
+    return false;
+  } else if (n > 1) {
+    return true;
+  }
+}
