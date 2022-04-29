@@ -545,7 +545,7 @@ function plural(n) {
     return true;
   }
 }
-//?
+//? this solution is much simpler code than the if/else statements above. It just uses a turnery to solve the problem, if n === 1 it returns false and if it isn't 1 then in returns true.
 function plural(n) {
   return n === 1 ? false : true;
 }
