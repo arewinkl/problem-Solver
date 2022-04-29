@@ -555,7 +555,7 @@ function plural(n) {
 // If the input is an empty array or is null, return an empty array.
 // Example
 // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
-//TODO Here what
+//TODO Here we pushed all the values to the newArray, by filtering through all of the values and only doing it for inputs that were less than zero, and then summed all of those values up.
 function countPositivesSumNegatives(input) {
   const newArray = [];
   let positive = 0;
