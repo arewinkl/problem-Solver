@@ -602,6 +602,7 @@ function countPositivesSumNegatives(input) {
 // Return an array of all the steps.
 // 1 <= n <= 8
 // NOTE: n != 0, because n represents the number of 1s.
+//TODO practice using nested for loops and manipulating arrays values.
 function bitMarch(n) {
   console.log("n", n);
   var arr = [];
