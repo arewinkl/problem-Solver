@@ -734,3 +734,6 @@ function firstNonConsecutive(arr) {
   }
   return null;
 }
+
+firstNonConsecutive = (a) =>
+  (a = a.filter((e, i) => e - a[i - 1] !== 1)[1]) === undefined ? null : a;
