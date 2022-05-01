@@ -710,3 +710,8 @@ class Kata {
     return length * width * height;
   }
 }
+
+function sumFromString(str) {
+  const numbers = str.match(/\d+/g) || [];
+  return numbers.map(Number).reduce((a, b) => a + b, 0);
+}
