@@ -648,6 +648,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   }
 };
 
+// Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.
+// Your task is to write a function maskify, which changes all but the last four characters into '#'.
 function maskify(cc) {
   const newArray = [];
   const length = cc.length - 4;
@@ -659,4 +661,9 @@ function maskify(cc) {
     }
   }
   return newArray.join("");
+}
+//? The padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.
+function maskify(cc) {
+  console.log(cc.slice(-4).padStart(cc.length, "#"));
+  return cc.slice(-4).padStart(cc.length, "#");
 }
