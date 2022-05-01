@@ -696,6 +696,7 @@ function stringMerge(string1, string2, letter) {
   const newString = secondString.join("");
   return first + newString;
 }
+//Todo This is a second solution that simplifies the answer by splicing everything after (letter) in string1. Then the second string slices off only the beginning. Then the first piece is added to the second and returned for the answer.
 function stringMerge(string1, string2, letter) {
   return (
     string1.slice(0, string1.indexOf(letter)) +
