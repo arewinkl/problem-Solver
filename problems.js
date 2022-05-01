@@ -622,3 +622,11 @@ function binToDec(bin) {
   console.log(parseInt(bin, 2));
   return parseInt(bin, 2);
 }
+
+function maps(x) {
+  const newArray = [];
+  x.map(function (x) {
+    newArray.push(x * 2);
+  });
+  return newArray;
+}
