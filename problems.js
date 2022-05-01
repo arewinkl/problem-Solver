@@ -720,6 +720,7 @@ class Kata {
 // str = "In 2015, I want to know how much does iPhone 6+ cost?"
 // The numbers are 2015, 6
 // Sum is 2021.
+//?The first variable numbers takes the string and only returns numbers in the string. Once this is done it allows us to use the reduce method, to sum up all of the numbers in the string.
 function sumFromString(str) {
   const numbers = str.match(/\d+/g) || [];
   return numbers.map(Number).reduce((a, b) => a + b, 0);
