@@ -637,3 +637,11 @@ function maps(x) {
 function maps(x) {
   return x.map((n) => n * 2);
 }
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  if (mpg * fuelLeft >= distanceToPump) {
+    return true;
+  } else {
+    return false;
+  }
+};
