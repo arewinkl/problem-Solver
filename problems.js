@@ -703,3 +703,9 @@ function stringMerge(string1, string2, letter) {
     string2.slice(string2.indexOf(letter))
   );
 }
+
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
