@@ -615,3 +615,8 @@ function bitMarch(n) {
   }
   return arr;
 }
+
+function binToDec(bin) {
+  console.log(parseInt(bin, 2));
+  return parseInt(bin, 2);
+}
