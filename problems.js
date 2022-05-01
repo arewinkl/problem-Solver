@@ -617,6 +617,7 @@ function bitMarch(n) {
 }
 
 // Complete the function which converts a binary number (given as a string) to a decimal number.
+//?the parseInt() function takes in a string and returns an integer. so this function is used to pass bin in and then you set the base as 2, because in math base 2 is for binary numbers.
 function binToDec(bin) {
   console.log(parseInt(bin, 2));
   return parseInt(bin, 2);
