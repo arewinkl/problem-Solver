@@ -647,3 +647,16 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return false;
   }
 };
+
+function maskify(cc) {
+  const newArray = [];
+  const length = cc.length - 4;
+  for (let i = 0; i < cc.length; i++) {
+    if (i < length) {
+      newArray.push("#");
+    } else {
+      newArray.push(cc[i]);
+    }
+  }
+  return newArray.join("");
+}
