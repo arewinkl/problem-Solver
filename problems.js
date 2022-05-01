@@ -674,7 +674,7 @@ function maskify(cc) {
 // ("coding", "anywhere", "n")   ==>  "codinywhere"
 // ("jason", "samson", "s")      ==>  "jasamson"
 // ("wonderful", "people", "e")  ==>  "wondeople"
-
+//? The first for loop takes the first string and adds letters to the first variable, but breaks one it matches the parameter (letter). Then the second for loop finds where the string2 matches letter and splices everything before that in the string. Once all of these are completed then first and the new (secondString) are added together and returned.
 function stringMerge(string1, string2, letter) {
   const firstString = string1.split("");
   const secondString = string2.split("");
@@ -689,7 +689,7 @@ function stringMerge(string1, string2, letter) {
   }
   for (let x = 0; x < secondString.length; x++) {
     if (secondString[x] == letter) {
-      const answer = secondString.splice(0, x);
+      secondString.splice(0, x);
       break;
     }
   }
