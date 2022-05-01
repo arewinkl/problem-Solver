@@ -633,3 +633,7 @@ function maps(x) {
   });
   return newArray;
 }
+//? here is a simpler solution to use the map function and directly return the results.
+function maps(x) {
+  return x.map((n) => n * 2);
+}
