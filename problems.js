@@ -769,3 +769,7 @@ const pipeFix = (numbers) =>
   [...Array(numbers[numbers.length - 1] - numbers[0] + 1)].map(
     (_, idx) => numbers[0] + idx
   );
+
+function oddCount(n) {
+  return Math.floor(n / 2);
+}
