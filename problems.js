@@ -785,3 +785,7 @@ function getAge(inputString) {
   const num = inputString.match(/\d+/g);
   return parseInt(num);
 }
+//? here is a second solution where you can just parse int to find the number in the string.
+function getAge(inputString) {
+  return parseInt(inputString);
+}
