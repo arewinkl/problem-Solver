@@ -789,3 +789,19 @@ function getAge(inputString) {
 function getAge(inputString) {
   return parseInt(inputString);
 }
+
+function bingo(a) {
+  for (let i = 0; i < a.length; i++) {
+    if (
+      a.includes(2) &&
+      a.includes(7) &&
+      a.includes(9) &&
+      a.includes(14) &&
+      a.includes(15)
+    ) {
+      return "WIN";
+    } else {
+      return "LOSE";
+    }
+  }
+}
