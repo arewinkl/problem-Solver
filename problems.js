@@ -777,3 +777,8 @@ const pipeFix = (numbers) =>
 function oddCount(n) {
   return Math.floor(n / 2);
 }
+
+function getAge(inputString) {
+  const num = inputString.match(/\d+/g).join("");
+  return parseInt(num);
+}
