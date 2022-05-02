@@ -764,7 +764,7 @@ function pipeFix(numbers) {
   }
   return newArray;
 }
-
+//? This is a second solution that uses the spread operator, and then mapped over the numbers parameter being passed in for this problem.
 const pipeFix = (numbers) =>
   [...Array(numbers[numbers.length - 1] - numbers[0] + 1)].map(
     (_, idx) => numbers[0] + idx
