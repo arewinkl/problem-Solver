@@ -811,3 +811,11 @@ function bingo(a) {
 function bingo(a) {
   return [2, 9, 14, 7, 15].every((x) => a.includes(x)) ? "WIN" : "LOSE";
 }
+
+function minPermutation(n) {
+  if (n < 0) return -minPermutation(-n);
+  const digits = [...String(n)].sort((a, b) => a - b);
+  const nonzero = digits.findIndex((x) => x > 0);
+  [digits[0], digits[nonzero]] = [digits[nonzero], digits[0]];
+  return +digits.join`` || 0;
+}
