@@ -812,6 +812,14 @@ function bingo(a) {
   return [2, 9, 14, 7, 15].every((x) => a.includes(x)) ? "WIN" : "LOSE";
 }
 
+//! Given a number, find the permutation with the smallest absolute value (no leading zeros).
+//! -20 => -20
+//! -32 => -23
+//! 0 => 0
+//! 10 => 10
+//! 29394 => 23499
+//! The input will always be an integer.
+//! I was not able to solve this one, so I need to go back over and understand how they dealt with the zeros in the parameter to return the smallest number that would'nt start with a zero.
 function minPermutation(n) {
   if (n < 0) return -minPermutation(-n);
   const digits = [...String(n)].sort((a, b) => a - b);
