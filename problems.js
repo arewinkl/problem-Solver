@@ -843,3 +843,4 @@ function usdcny(usd) {
   const Cny = (usd * 6.75).toFixed(2) + " Chinese Yuan";
   return Cny;
 }
+usdcny = ($) => `${($ * 6.75).toFixed(2)} Chinese Yuan`;
