@@ -833,3 +833,8 @@ function minPermutation(n) {
 // [12, 34, 56, 78]  =>  "09"
 // [2015, 8, 26]     =>  "3479"
 // Note: the digits in the resulting string should be sorted.
+
+function usdcny(usd) {
+  const Cny = (usd * 6.75).toFixed(2) + " Chinese Yuan";
+  return Cny;
+}
