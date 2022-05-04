@@ -861,3 +861,6 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
     return "Shark Bait!";
   }
 }
+//Here is a fast way to solve this problem using a turnery to determine if you are faster than the shark to the pontoon.
+shark = (pD, sD, yS, sS, d) =>
+  yS / pD > sS / sD / (d ? 2 : 1) ? "Alive!" : "Shark Bait!";
