@@ -845,3 +845,16 @@ function usdcny(usd) {
 }
 //?Here is another solution to the problem that is more streamlined.
 usdcny = ($) => `${($ * 6.75).toFixed(2)} Chinese Yuan`;
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
+  const sharkTravel = sharkDistance / sharkSpeed;
+  const youTravel = pontoonDistance / youSpeed;
+  const dolphinHelp = sharkDistance / (sharkSpeed / 2);
+  if (youTravel < sharkTravel) {
+    return "Alive!";
+  } else if (dolphin == true && youTravel < dolphinHelp) {
+    return "Alive!";
+  } else {
+    return "Shark Bait!";
+  }
+}
