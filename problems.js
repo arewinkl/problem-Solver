@@ -864,3 +864,11 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
 //Here is a fast way to solve this problem using a turnery to determine if you are faster than the shark to the pontoon.
 shark = (pD, sD, yS, sS, d) =>
   yS / pD > sS / sD / (d ? 2 : 1) ? "Alive!" : "Shark Bait!";
+
+function powersOfTwo(n) {
+  const newArray = [];
+  for (let i = 0; i <= n; i++) {
+    newArray.push(2 ** i);
+  }
+  return newArray;
+}
