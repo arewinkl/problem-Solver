@@ -951,3 +951,16 @@ function shortcut(str) {
     })
     .join("");
 }
+
+function oddOrEven(n) {
+  let oddNum = 0;
+  let meow = n / 2;
+
+  if (n % 2 === 1) {
+    return "Either";
+  } else if (meow % 2 == 1) {
+    return "Odd";
+  } else {
+    return "Even";
+  }
+}
