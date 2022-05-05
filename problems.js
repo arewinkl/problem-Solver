@@ -914,7 +914,7 @@ function giveChange(amount) {
   }
   return arr;
 }
-
+//? here is another solution that uses a .map().
 const bills = [100, 50, 20, 10, 5, 1];
 
 const giveChange = (amount) =>
