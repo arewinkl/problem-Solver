@@ -973,3 +973,8 @@ function oddOrEven(n) {
     return "Even";
   }
 }
+
+//? here is another solution using a turnery that solves it by testing if the halved number has a remainder when divisible by two.
+function oddOrEven(n) {
+  return n % 2 ? EITHER : (n / 2) % 2 ? ODD : EVEN;
+}
