@@ -942,6 +942,7 @@ function shortcut(string) {
     .join("");
 }
 
+//? This solution takes the string splits it and filters through the array provided to see if any of the values match if they do it is true and wont push, but if its false those values are pushed and joined.
 function shortcut(str) {
   return str
     .split("")
