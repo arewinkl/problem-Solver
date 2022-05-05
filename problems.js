@@ -914,7 +914,7 @@ function giveChange(amount) {
   }
   return arr;
 }
-//? here is another solution that uses a .map().
+//? here is another solution that uses a .map(). You should review this change to see if you can use a map like this in the future to go through a problem that adjusts the value throughout the map.
 const bills = [100, 50, 20, 10, 5, 1];
 
 const giveChange = (amount) =>
@@ -926,3 +926,12 @@ const giveChange = (amount) =>
       return result;
     })
     .reverse();
+
+function shortcut(string) {
+  return string
+    .split("")
+    .map((x) =>
+      x === "a" || x === "e" || x === "i" || x === "o" || x === "u" ? "" : x
+    )
+    .join("");
+}
