@@ -1006,3 +1006,11 @@ const flip = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));
 function opposite(number) {
   return number * -1;
 }
+
+function even_or_odd(number) {
+  if (number % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
+}
