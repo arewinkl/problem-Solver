@@ -1015,7 +1015,7 @@ function even_or_odd(number) {
     return "Odd";
   }
 }
-
+//? This turnery simplifies the solution to this problem to a single line of code.
 function even_or_odd(number) {
   return number % 2 ? "Odd" : "Even";
 }
