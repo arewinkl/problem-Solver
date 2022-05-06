@@ -995,3 +995,5 @@ const flip = (d, a) => {
       .reverse();
   }
 };
+
+const flip = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));
