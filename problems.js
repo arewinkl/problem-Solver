@@ -995,5 +995,5 @@ const flip = (d, a) => {
       .reverse();
   }
 };
-
+//? Here is another solution for this problem that uses a turnery to solve the flip and sort of the array.
 const flip = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));
