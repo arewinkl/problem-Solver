@@ -997,3 +997,7 @@ const flip = (d, a) => {
 };
 //? Here is another solution for this problem that uses a turnery to solve the flip and sort of the array.
 const flip = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));
+
+function opposite(number) {
+  return number * -1;
+}
