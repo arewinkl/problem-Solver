@@ -978,3 +978,17 @@ function oddOrEven(n) {
 function oddOrEven(n) {
   return n % 2 ? EITHER : (n / 2) % 2 ? ODD : EVEN;
 }
+
+const flip = (d, a) => {
+  if (d === "R") {
+    return a.sort(function (a, b) {
+      return a - b;
+    });
+  } else if (d === "L") {
+    return a
+      .sort(function (a, b) {
+        return a - b;
+      })
+      .reverse();
+  }
+};
