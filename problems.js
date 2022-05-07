@@ -1019,3 +1019,7 @@ function even_or_odd(number) {
 function even_or_odd(number) {
   return number % 2 ? "Odd" : "Even";
 }
+
+function boolToWord(bool) {
+  return bool === true ? "Yes" : "No";
+}
