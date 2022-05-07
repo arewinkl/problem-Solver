@@ -1037,7 +1037,7 @@ function lovefunc(flower1, flower2) {
     return false;
   }
 }
-
+//? For this solution if adding the two values together is divisible by 2 with a remainder of one, if this condition is met it returns true else if returns false.
 function lovefunc(flower1, flower2) {
   return (flower1 + flower2) % 2 === 1;
 }
