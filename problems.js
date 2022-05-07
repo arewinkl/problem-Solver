@@ -1041,3 +1041,7 @@ function lovefunc(flower1, flower2) {
 function lovefunc(flower1, flower2) {
   return (flower1 + flower2) % 2 === 1;
 }
+
+function aspectRatio(x, y) {
+  return [Math.ceil(y * 1.77777), y];
+}
