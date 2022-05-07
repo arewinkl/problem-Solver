@@ -1024,3 +1024,14 @@ function even_or_odd(number) {
 function boolToWord(bool) {
   return bool === true ? "Yes" : "No";
 }
+
+function lovefunc(flower1, flower2) {
+  console.log(flower1, flower2);
+  if (flower1 % 2 === 1 && flower2 % 2 !== 1) {
+    return true;
+  } else if (flower1 % 2 !== 1 && flower2 % 2 === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
