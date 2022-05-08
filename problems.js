@@ -1058,3 +1058,12 @@ function aspectRatio(x, y) {
 // I'm very curious for your solutions and the way you solve it. Maybe someone of you will find an easy pure mathematics solution.
 // Have fun coding it and please don't forget to vote and rank this kata! :-)
 // I have also created other katas. Take a look if you enjoyed this kata!
+function dontGiveMeFive(start, end) {
+  let count = 0;
+  for (let i = start; i <= end; i++) {
+    if (!/5/.test(i)) {
+      count++;
+    }
+  }
+  return count;
+}
