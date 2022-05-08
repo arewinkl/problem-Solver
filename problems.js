@@ -1148,3 +1148,15 @@ String.prototype.toJadenCase = function () {
     return x.toUpperCase();
   });
 };
+
+function buildFun(n) {
+  var res = [];
+
+  for (let i = 0; i < n; i++) {
+    res.push(function () {
+      console.log(i);
+      return i;
+    });
+  }
+  return res;
+}
