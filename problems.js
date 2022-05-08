@@ -1142,3 +1142,9 @@ String.prototype.toJadenCase = function () {
   console.log(meow.join(" "));
   return meow.join(" ");
 };
+
+String.prototype.toJadenCase = function () {
+  return this.replace(/(^|\s)[a-z]/g, function (x) {
+    return x.toUpperCase();
+  });
+};
