@@ -1127,5 +1127,5 @@ function between(a, b) {
   }
   return newArray;
 }
-
+//? this solution uses a spread operator and a .map() method to take the parameters and return those values and all the values between them.
 const between = (a, b) => [...Array(b - a + 1)].map((_, idx) => idx + a);
