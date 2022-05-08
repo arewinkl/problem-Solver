@@ -1164,3 +1164,10 @@ function buildFun(n) {
   }
   return res;
 }
+
+function counter() {
+  let count = 1;
+  return function meow() {
+    return count++;
+  };
+}
