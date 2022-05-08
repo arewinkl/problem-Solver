@@ -1082,7 +1082,7 @@ function symmetricPoint(p, q) {
 
   return [firstNumber, secondNumber];
 }
-
+//? This solution takes the parameters and maps through them to get the solution, by multiplying one by 2 and subtracting the first parameter from it.
 function symmetricPoint(p, q) {
   return p.map((a, i) => q[i] * 2 - a);
 }
