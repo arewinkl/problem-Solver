@@ -1067,3 +1067,8 @@ function dontGiveMeFive(start, end) {
   }
   return count;
 }
+don;
+tGiveMeFive = (s, e) => {
+  for (var cnt = 0; s <= e; ++s) (s + "").includes("5") || cnt++;
+  return cnt;
+};
