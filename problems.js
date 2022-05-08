@@ -1114,3 +1114,11 @@ function pillars(num_pill, dist, width) {
     return distance + width * pillars;
   }
 }
+
+function between(a, b) {
+  const newArray = [];
+  for (let i = a; i <= b; i++) {
+    newArray.push(i);
+  }
+  return newArray;
+}
