@@ -1104,7 +1104,7 @@ function pillars(num_pill, dist, width) {
 
   return num_pill === 1 ? 0 : distance + pillSize;
 }
-
+//? this solution uses an if statement to determine if there ar enough pillars to calculate distance between the pillars, easier solution that the turnery but is also much more code.
 function pillars(num_pill, dist, width) {
   if (num_pill === 1) {
     return 0;
