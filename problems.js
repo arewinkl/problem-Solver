@@ -1092,3 +1092,10 @@ function symmetricPoint(p, q) {
 function smash(words) {
   return words.join(" ");
 }
+
+function pillars(num_pill, dist, width) {
+  const distance = dist * 100 * (num_pill - 1);
+  const pillSize = (num_pill - 2) * width;
+
+  return num_pill === 1 ? 0 : distance + pillSize;
+}
