@@ -1127,3 +1127,5 @@ function between(a, b) {
   }
   return newArray;
 }
+
+const between = (a, b) => [...Array(b - a + 1)].map((_, idx) => idx + a);
