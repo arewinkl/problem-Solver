@@ -1129,3 +1129,11 @@ function between(a, b) {
 }
 //? this solution uses a spread operator and a .map() method to take the parameters and return those values and all the values between them.
 const between = (a, b) => [...Array(b - a + 1)].map((_, idx) => idx + a);
+
+String.prototype.toJadenCase = function () {
+  const meow = this.split(" ").map(
+    (x) => x.charAt(0).toUpperCase() + x.slice(1)
+  );
+  console.log(meow.join(" "));
+  return meow.join(" ");
+};
