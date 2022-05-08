@@ -1072,3 +1072,10 @@ dontGiveMeFive = (s, e) => {
   for (var cnt = 0; s <= e; ++s) (s + "").includes("5") || cnt++;
   return cnt;
 };
+
+function symmetricPoint(p, q) {
+  const firstNumber = q[0] - p[0] + q[0];
+  const secondNumber = q[1] - p[1] + q[1];
+
+  return [firstNumber, secondNumber];
+}
