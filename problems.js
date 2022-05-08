@@ -1067,6 +1067,7 @@ function dontGiveMeFive(start, end) {
   }
   return count;
 }
+//? this solution takes that numbers and make them strings and uses the incudes method to see if and of the string values contain a 5, and if they dont they are returned for the final answer.
 dontGiveMeFive = (s, e) => {
   for (var cnt = 0; s <= e; ++s) (s + "").includes("5") || cnt++;
   return cnt;
