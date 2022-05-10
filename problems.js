@@ -1219,6 +1219,6 @@ function mountainsOfHoiyama(width) {
   }
   return width + result;
 }
-
+//? this is a simple solition that uses the math to calculate the size of the mountain.
 const mountainsOfHoiyama = (width) =>
   ((width + 1) * (width ** 2 + 2 + width)) / 8;
