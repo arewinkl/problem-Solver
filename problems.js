@@ -1244,3 +1244,18 @@ function find_difference(a, b) {
   }
   return Math.abs(volume(a) - volume(b));
 }
+
+var min = function (list) {
+  const least = list.sort((x, y) => {
+    return x - y;
+  });
+
+  return least[0];
+};
+
+var max = function (list) {
+  const most = list.sort((x, y) => {
+    return y - x;
+  });
+  return most[0];
+};
