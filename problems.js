@@ -1268,3 +1268,7 @@ var max = function (list) {
 //? check and practice using spread operators to sort through the list.
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
+
+function wrap(value) {
+  return { value };
+}
