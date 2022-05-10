@@ -1264,6 +1264,6 @@ var max = function (list) {
   });
   return most[0];
 };
-
+//? This solution uses the spread operator and then Math.min or Math.max to find the correct number.
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
