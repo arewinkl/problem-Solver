@@ -1273,3 +1273,7 @@ const max = (list) => Math.max(...list);
 function wrap(value) {
   return { value };
 }
+
+function testEven(n) {
+  return n % 2 === 0;
+}
