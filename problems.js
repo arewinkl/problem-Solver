@@ -1269,6 +1269,7 @@ var max = function (list) {
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
 
+// Here you need to return the value in an object, so simply placing it in brackets allows you to successfully return value inside of an object.
 function wrap(value) {
   return { value };
 }
