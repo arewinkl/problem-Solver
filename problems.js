@@ -1237,7 +1237,7 @@ function findDifference(a, b) {
     return second - first;
   }
 }
-
+//? This solution creates a second function volume() that reduced the inputs and creates a value for each parameter (a, b).
 function find_difference(a, b) {
   function volume(c) {
     return c.reduce((x, y) => x * y);
