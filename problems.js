@@ -1237,3 +1237,10 @@ function findDifference(a, b) {
     return second - first;
   }
 }
+
+function find_difference(a, b) {
+  function volume(c) {
+    return c.reduce((x, y) => x * y);
+  }
+  return Math.abs(volume(a) - volume(b));
+}
