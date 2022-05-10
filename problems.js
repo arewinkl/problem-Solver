@@ -1264,3 +1264,6 @@ var max = function (list) {
   });
   return most[0];
 };
+
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
