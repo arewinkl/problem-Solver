@@ -1182,3 +1182,14 @@ function counter() {
     return count++;
   };
 }
+
+function mountainsOfHoiyama(width) {
+  let result = 0;
+  for (let i = 1; i <= (width - 1) / 2; i++) {
+    result += width - i;
+    for (let a = 1; a <= i; a++) {
+      result += (width - (i + a)) * 2;
+    }
+  }
+  return width + result;
+}
