@@ -1219,3 +1219,6 @@ function mountainsOfHoiyama(width) {
   }
   return width + result;
 }
+
+const mountainsOfHoiyama = (width) =>
+  ((width + 1) * (width ** 2 + 2 + width)) / 8;
