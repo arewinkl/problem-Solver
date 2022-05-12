@@ -16,3 +16,5 @@ function f() {
     return parseInt(arguments[0], 8);
   }
 }
+//Below is a very simply code explanation that does virtually the same thing.
+f = (x) => eval(0 + x);
