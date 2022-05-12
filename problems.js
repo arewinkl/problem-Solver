@@ -1282,3 +1282,13 @@ function wrap(value) {
 function testEven(n) {
   return n % 2 === 0;
 }
+
+function warnTheSheep(queue) {
+  for (let i = 0; i < queue.length; i++) {
+    if (queue[0] == "wolf") {
+      return "Pls go away and stop eating my sheep";
+    } else if (queue[i] !== "sheep") {
+      return `Oi! Sheep number ${i}! You are about to be eaten by a wolf!`;
+    }
+  }
+}
