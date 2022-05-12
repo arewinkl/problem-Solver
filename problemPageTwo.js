@@ -1,3 +1,4 @@
+//This solution uses a turnery to decide what to return based on the placement of 'wolf' in the array. A variable position helps to determine where the wolf is located.
 function warnTheSheep(queue) {
   const position = queue.reverse().indexOf("wolf");
   console.log(position);
