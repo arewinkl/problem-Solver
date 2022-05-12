@@ -6,3 +6,8 @@ function warnTheSheep(queue) {
     ? "Pls go away and stop eating my sheep"
     : `Oi! Sheep number ${position}! You are about to be eaten by a wolf!`;
 }
+
+function sumStr(a, b) {
+  const answer = Number(a) + Number(b);
+  return answer.toString();
+}
