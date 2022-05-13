@@ -73,3 +73,11 @@ function booleanToString(b) {
 function booleanToString(b) {
   return b.toString();
 }
+
+function repeatStr(n, s) {
+  const newArray = [];
+  for (let i = 0; i < n; i++) {
+    newArray.push(s);
+  }
+  return newArray.join("");
+}
