@@ -84,3 +84,7 @@ function repeatStr(n, s) {
   }
   return newArray.join("");
 }
+
+function repeatStr(n, s) {
+  return s.repeat(n);
+}
