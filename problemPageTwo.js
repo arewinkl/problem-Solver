@@ -69,7 +69,7 @@ function defineSuit(card) {
 function booleanToString(b) {
   return b === true ? "true" : "false";
 }
-
+// converts the boolean to a string that returns the words true or false.
 function booleanToString(b) {
   return b.toString();
 }
