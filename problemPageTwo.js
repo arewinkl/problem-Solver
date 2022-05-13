@@ -63,3 +63,7 @@ function defineSuit(card) {
   };
   return s[card.charAt(card.length - 1)];
 }
+
+function booleanToString(b) {
+  return b === true ? "true" : "false";
+}
