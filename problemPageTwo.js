@@ -84,7 +84,7 @@ function repeatStr(n, s) {
   }
   return newArray.join("");
 }
-
+//? this solution uses the repeat function for the string to return it several times for the answer.
 function repeatStr(n, s) {
   return s.repeat(n);
 }
