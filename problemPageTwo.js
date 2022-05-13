@@ -35,3 +35,15 @@ function positiveSum(arr) {
 function positiveSum(arr) {
   return arr.reduce((a, b) => a + (b > 0 ? b : 0), 0);
 }
+
+function defineSuit(card) {
+  if (card.includes("♣")) {
+    return "clubs";
+  } else if (card.includes("♠")) {
+    return "spades";
+  } else if (card.includes("♦")) {
+    return "diamonds";
+  } else {
+    return "hearts";
+  }
+}
