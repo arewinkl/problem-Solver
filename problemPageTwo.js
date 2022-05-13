@@ -53,7 +53,7 @@ function defineSuit(card) {
     return "hearts";
   }
 }
-
+//? this answer uses an object with the possible answers, and return what character is in the string card.
 function defineSuit(card) {
   const s = {
     "♣": "clubs",
