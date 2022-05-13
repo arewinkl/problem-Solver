@@ -88,3 +88,20 @@ function repeatStr(n, s) {
 function repeatStr(n, s) {
   return s.repeat(n);
 }
+
+function points(games) {
+  const newArray = [];
+
+  for (let i = 0; i < games.length; i++) {
+    if (games[i].split(":")[0] > games[i].split(":")[1]) {
+      newArray.push(3);
+    } else if (games[i].split(":")[0] === games[i].split(":")[1]) {
+      newArray.push(1);
+    } else {
+      newArray.push(0);
+    }
+  }
+  return newArray.map(Number).reduce((a, b) => {
+    return a + b;
+  });
+}
