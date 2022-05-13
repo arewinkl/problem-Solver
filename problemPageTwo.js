@@ -111,7 +111,7 @@ function points(games) {
     return a + b;
   });
 }
-
+//? This solution takes the input games, and uses the reduce() to take output which is set to zero nad then compares the values and pushes 0,1,3 for the total.
 const points = (games) =>
   games.reduce((output, current) => {
     return (output +=
