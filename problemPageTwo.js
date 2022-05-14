@@ -141,3 +141,11 @@ const howMuchWater = (water, load, clothes) =>
     : clothes < load
     ? "Not enough clothes"
     : Math.round(water * Math.pow(1.1, clothes - load) * 100) / 100;
+
+const reverseSeq = (n) => {
+  const newArray = [];
+  for (let i = n; i > 0; i--) {
+    newArray.push(i);
+  }
+  return newArray;
+};
