@@ -134,7 +134,7 @@ function howMuchWater(water, load, clothes) {
     return Number(answer);
   }
 }
-
+//? This answer uses a turnery to solve and return the appropriate answer.
 const howMuchWater = (water, load, clothes) =>
   clothes > 2 * load
     ? "Too much clothes"
