@@ -117,3 +117,15 @@ const points = (games) =>
     return (output +=
       current[0] > current[2] ? 3 : current[0] === current[2] ? 1 : 0);
   }, 0);
+
+function howMuchWater(water, load, clothes) {
+  const answer = (water * 1.1 ** (clothes - load)).toFixed(2);
+
+  if (load * 2 < clothes) {
+    return "Too much clothes";
+  } else if (clothes < load) {
+    return "Not enough clothes";
+  } else {
+    return Number(answer);
+  }
+}
