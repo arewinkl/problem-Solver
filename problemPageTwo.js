@@ -199,3 +199,13 @@ function reverseList(list) {
 const stringToNumber = function (str) {
   return Number(str);
 };
+
+function doubleChar(str) {
+  const newStr = [];
+  for (let i = 0; i < str.length; i++) {
+    newStr.push(str[i]);
+    newStr.push(str[i]);
+  }
+
+  return newStr.join("");
+}
