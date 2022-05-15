@@ -214,3 +214,17 @@ function doubleChar(str) {
 
   return newStr.join("");
 }
+
+function doubleChar(str) {
+  console.log(str.split(""));
+  console.log(
+    str
+      .split("")
+      .map((c) => c + c)
+      .join("")
+  );
+  return str
+    .split("")
+    .map((c) => c + c)
+    .join("");
+}
