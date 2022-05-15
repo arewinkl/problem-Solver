@@ -187,3 +187,7 @@ function reverseList(list) {
   }
   return newList;
 }
+
+const stringToNumber = function (str) {
+  return Number(str);
+};
