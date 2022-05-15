@@ -151,3 +151,11 @@ const reverseSeq = (n) => {
   }
   return newArray;
 };
+
+function hello(name) {
+  return name == "" || !name
+    ? "Hello, World!"
+    : `Hello, ${
+        name.toLowerCase()[0].toUpperCase() + name.toLowerCase().slice(1)
+      }!`;
+}
