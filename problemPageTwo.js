@@ -166,7 +166,7 @@ function hello(name) {
         name.toLowerCase()[0].toUpperCase() + name.toLowerCase().slice(1)
       }!`;
 }
-
+//? this is a more complicated solution that uses regex and separate replacement functions, thata use both .call.blind on each of the strings.
 hello = (n) =>
   `Hello, ${
     n
