@@ -215,6 +215,7 @@ function doubleChar(str) {
   return newStr.join("");
 }
 
+//? This function solves for the doubleChar() by mapping over the split string and doubles it up. after the mapping is done it is joined together, to return a single string.
 function doubleChar(str) {
   console.log(str.split(""));
   console.log(
