@@ -166,3 +166,12 @@ function hello(name) {
         name.toLowerCase()[0].toUpperCase() + name.toLowerCase().slice(1)
       }!`;
 }
+
+hello = (n) =>
+  `Hello, ${
+    n
+      ? n
+          .replace(/./, Function.call.bind(String.prototype.toUpperCase))
+          .replace(/(?<=.).+/, Function.call.bind(String.prototype.toLowerCase))
+      : "World"
+  }!`;
