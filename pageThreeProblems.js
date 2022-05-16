@@ -27,7 +27,7 @@ const cannonsReady = (gunners) => {
   });
   return bang > 0 ? "Shiver me timbers!" : "Fire!";
 };
-
+//? This uses a for loop to check if the value nay exists.
 const cannonsReady = (gunners) => {
   for (var i in gunners) {
     if (gunners[i] == "nay") {
