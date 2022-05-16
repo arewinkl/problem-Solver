@@ -89,7 +89,7 @@ function plant(seed, water, fert, temp) {
   }
   return string;
 }
-
+//? This answer uses the .repeat() that allows you to create a long string based on the variables that are passed in to the function.
 function plant(seed, water, fert, temp) {
   let stem = "-".repeat(water);
   let flower = seed.repeat(fert);
