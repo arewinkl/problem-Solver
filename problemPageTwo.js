@@ -254,7 +254,7 @@ const prevMultOfThree = (n) => {
     }
   }
 };
-
+//? This solution works and has three options, one of which recalls the function but with the string one number shorter until it either works or returns null for the function.
 const prevMultOfThree = (n) => {
   if (n === 0) return null;
   if (n % 3 === 0) return n;
