@@ -55,3 +55,27 @@ const areaOrPerimeter = function (l, w) {
     return l * 2 + w * 2;
   }
 };
+
+function plant(seed, water, fert, temp) {
+  let string = "";
+
+  if (temp >= 20 && temp <= 30) {
+    for (let x = 0; x < water; x++) {
+      for (let x = 0; x < water; x++) {
+        string += "-";
+      }
+
+      for (let x = 0; x < fert; x++) {
+        string += seed;
+      }
+    }
+  } else {
+    for (let x = 0; x < water; x++) {
+      for (let x = 0; x < water; x++) {
+        string += "-";
+      }
+    }
+    string += seed;
+  }
+  return string;
+}
