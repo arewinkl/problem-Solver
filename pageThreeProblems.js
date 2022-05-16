@@ -4,3 +4,15 @@
 function reverseWords(str) {
   return str.split(" ").reverse().join(" ");
 }
+
+const cannonsReady = (gunners) => {
+  let bang = 0;
+  Object.keys(gunners).forEach(function (key) {
+    if (gunners[key] == "nay") {
+      bang++;
+    } else {
+      bang + 0;
+    }
+  });
+  return bang > 0 ? "Shiver me timbers!" : "Fire!";
+};
