@@ -27,3 +27,12 @@ const cannonsReady = (gunners) => {
   });
   return bang > 0 ? "Shiver me timbers!" : "Fire!";
 };
+
+const cannonsReady = (gunners) => {
+  for (var i in gunners) {
+    if (gunners[i] == "nay") {
+      return "Shiver me timbers!";
+    }
+  }
+  return "Fire!";
+};
