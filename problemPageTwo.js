@@ -229,3 +229,20 @@ function doubleChar(str) {
     .map((c) => c + c)
     .join("");
 }
+
+const prevMultOfThree = (n) => {
+  const length = n.toString().split("").length;
+  if (length == 1 && n % 3 !== 0) {
+    return null;
+  } else if (n % 3 === 0) {
+    return n;
+  } else {
+    for (let i = 1; i < length; i++) {
+      if (n.toString().split("").slice(0, -i).join("") % 3 === 0) {
+        return Number(n.toString().split("").slice(0, -i).join(""));
+      } else if (i == length - 1) {
+        return null;
+      }
+    }
+  }
+};
