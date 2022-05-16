@@ -89,3 +89,10 @@ function plant(seed, water, fert, temp) {
   }
   return string;
 }
+
+function plant(seed, water, fert, temp) {
+  let stem = "-".repeat(water);
+  let flower = seed.repeat(fert);
+  if (temp < 20 || temp > 30) return stem.repeat(water) + seed;
+  return (stem + flower).repeat(water);
+}
