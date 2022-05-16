@@ -260,3 +260,14 @@ const prevMultOfThree = (n) => {
   if (n % 3 === 0) return n;
   return prevMultOfThree(+n.toString().slice(0, -1));
 };
+//TODO this solution uses a simple for loop and then if that does'nt work it will just return null for the answer.
+const prevMultOfThree = (n) => {
+  for (let i = String(n).length; i > 0; i--) {
+    n = Number(String(n).substring(0, i));
+    if (n % 3 === 0) {
+      return n;
+    }
+  }
+
+  return null;
+};
