@@ -36,7 +36,7 @@ const cannonsReady = (gunners) => {
   }
   return "Fire!";
 };
-
+//TODO This solution is very simple and uses the .some() to check to see if the value nay exists.
 const cannonsReady = (gunners) => {
   return Object.values(gunners).some((m) => m === "nay")
     ? "Shiver me timbers!"
