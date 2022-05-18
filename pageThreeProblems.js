@@ -96,3 +96,18 @@ function plant(seed, water, fert, temp) {
   if (temp < 20 || temp > 30) return stem.repeat(water) + seed;
   return (stem + flower).repeat(water);
 }
+
+function Song(title, artist) {
+  this.title = title;
+  this.artist = artist;
+  let array = [];
+  this.howMany = function (x) {
+    let count = 0;
+    x.map((i) => {
+      array.includes(i.toUpperCase())
+        ? ""
+        : array.push(i.toUpperCase()) && (count = count + 1);
+    });
+    return count;
+  };
+}
