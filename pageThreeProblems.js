@@ -157,7 +157,7 @@ function animals(heads, legs) {
     return "No solutions";
   }
 }
-
+//? This creates what I believe is a conditional variable and then returns a specific value based off of the data that is passed into the function.
 function animals(heads, legs) {
   var cows = legs % 2 ? -1 : legs / 2 - heads;
   return heads >= cows && cows >= 0 ? [heads - cows, cows] : "No solutions";
