@@ -181,7 +181,7 @@ function isLockNessMonster(s) {
     return true;
   }
 }
-
+//? This solution uses the .includes() function to see if the string contains that specific value. Then there needs to be two .includes() functions to test the multiple cases to find if it is the Nessie Monster.
 function isLockNessMonster(s) {
   return s.includes("tree fiddy") || s.includes("3.50");
 }
