@@ -28,6 +28,7 @@ function take(arr, n) {
   return arr.slice(0, n);
 }
 
+//? This solution takes a new array and pushes the correct values to the new array and everything passed that is not pushed.
 function take(arr, n) {
   let counter = 0;
   let res = [];
