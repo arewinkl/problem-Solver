@@ -147,7 +147,6 @@ function Song(title, artist) {
 function animals(heads, legs) {
   const chickens = (heads * 4 - legs) / 2;
   const cows = heads - chickens;
-
   if (heads < 0 || legs < 0) {
     return "No solutions";
   } else if (chickens < 0 || cows < 0) {
