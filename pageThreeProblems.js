@@ -162,7 +162,7 @@ function animals(heads, legs) {
   var cows = legs % 2 ? -1 : legs / 2 - heads;
   return heads >= cows && cows >= 0 ? [heads - cows, cows] : "No solutions";
 }
-
+//TODO this solution creates variables for the return and then uses regex to write a turnery to determine what will be returned, if the result is negative then 'no solution' otherwise it will return an array with [chickens, cows].
 function animals(heads, legs) {
   const cows = legs / 2 - heads;
   const chickens = heads - cows;
