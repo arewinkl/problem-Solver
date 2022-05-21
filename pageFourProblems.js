@@ -9,3 +9,9 @@ function addExtra(listOfNumbers) {
   }
   return newArray;
 }
+
+function addExtra(listOfNumbers) {
+  console.log(listOfNumbers.concat());
+  console.log(listOfNumbers.concat(0));
+  return listOfNumbers.concat(0);
+}
