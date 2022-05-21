@@ -15,3 +15,9 @@ function addExtra(listOfNumbers) {
   console.log(listOfNumbers.concat(0));
   return listOfNumbers.concat(0);
 }
+
+function addExtra(listOfNumbers) {
+  console.log([...listOfNumbers]);
+  console.log([...listOfNumbers, 13]);
+  return [...listOfNumbers, 13];
+}
