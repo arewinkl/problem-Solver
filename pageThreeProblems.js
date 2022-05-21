@@ -144,3 +144,17 @@ function Song(title, artist) {
 // However, if 0 heads and 0 legs are given always return [0, 0] since zero heads must give zero animals.
 // There are many different ways to solve this, but they all give the same answer.
 // You will only be given integers types - however negative values (edge cases) will be given.
+function animals(heads, legs) {
+  const chickens = (heads * 4 - legs) / 2;
+  const cows = heads - chickens;
+
+  if (heads < 0 || legs < 0) {
+    return "No solutions";
+  } else if (chickens < 0 || cows < 0) {
+    return "No solutions";
+  } else if (legs % 2 == 0) {
+    return [chickens, cows];
+  } else {
+    return "No solutions";
+  }
+}
