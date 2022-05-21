@@ -21,3 +21,7 @@ function addExtra(listOfNumbers) {
   console.log([...listOfNumbers, 13]);
   return [...listOfNumbers, 13];
 }
+
+function take(arr, n) {
+  return arr.slice(0, n);
+}
