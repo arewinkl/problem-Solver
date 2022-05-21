@@ -15,7 +15,7 @@ function addExtra(listOfNumbers) {
   console.log(listOfNumbers.concat(0));
   return listOfNumbers.concat(0);
 }
-
+//TODO This solution uses the spread operator to add a number to the end of the array, and that number is 13.
 function addExtra(listOfNumbers) {
   console.log([...listOfNumbers]);
   console.log([...listOfNumbers, 13]);
