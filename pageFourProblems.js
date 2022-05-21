@@ -46,7 +46,7 @@ function isDivisible(n, x, y) {
   console.log(n, x, y);
   return n % x == 0 && n % y == 0 ? true : false;
 }
-
+//? This solution checks to see if the number is divisible by both x and y and if that isn't true it returns a true or false statement.
 function isDivisible(n, x, y) {
   return !(n % x || n % y);
 }
