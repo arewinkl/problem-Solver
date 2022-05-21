@@ -9,7 +9,7 @@ function addExtra(listOfNumbers) {
   }
   return newArray;
 }
-
+//? This solution takes the listOfNumbers parameter thats being passed into the function and uses the .concat() method to add a specific number to the end of the array. In this case the number added to the end of the array is 0.
 function addExtra(listOfNumbers) {
   console.log(listOfNumbers.concat());
   console.log(listOfNumbers.concat(0));
