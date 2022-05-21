@@ -169,3 +169,11 @@ function animals(heads, legs) {
 
   return /\.|-/g.test(`${chickens}${cows}`) ? "No solutions" : [chickens, cows];
 }
+
+function isLockNessMonster(s) {
+  if (s.includes("tree fiddy")) {
+    return true;
+  } else if (s.includes("$3.50")) {
+    return true;
+  }
+}
