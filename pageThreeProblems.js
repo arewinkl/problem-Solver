@@ -162,3 +162,10 @@ function animals(heads, legs) {
   var cows = legs % 2 ? -1 : legs / 2 - heads;
   return heads >= cows && cows >= 0 ? [heads - cows, cows] : "No solutions";
 }
+
+function animals(heads, legs) {
+  const cows = legs / 2 - heads;
+  const chickens = heads - cows;
+
+  return /\.|-/g.test(`${chickens}${cows}`) ? "No solutions" : [chickens, cows];
+}
