@@ -50,3 +50,14 @@ function isDivisible(n, x, y) {
 function isDivisible(n, x, y) {
   return !(n % x || n % y);
 }
+
+function sumOfDifferences(arr) {
+  const play = arr.sort((a, b) => {
+    return b - a;
+  });
+  if (arr == "") {
+    return 0;
+  } else {
+    return play[0] - play[play.length - 1];
+  }
+}
