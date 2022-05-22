@@ -67,3 +67,9 @@ function sumOfDifferences(arr) {
     return play[0] - play[play.length - 1];
   }
 }
+
+function sumOfDifferences(arr) {
+  console.log(Math.max(...arr));
+  console.log(Math.min(...arr));
+  return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
+}
