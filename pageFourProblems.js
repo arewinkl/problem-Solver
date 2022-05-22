@@ -68,6 +68,7 @@ function sumOfDifferences(arr) {
   }
 }
 
+//? This solution takes the array and returns the max value from the array and subtracts the smallest value to get the difference between the two. if there is no difference or the array is empty it will return 0.
 function sumOfDifferences(arr) {
   console.log(Math.max(...arr));
   console.log(Math.min(...arr));
