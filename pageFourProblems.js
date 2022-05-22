@@ -91,3 +91,7 @@ function remove(string) {
 
   return words[lengths] === "!" ? newWord : string;
 }
+
+function remove(s) {
+  return s.endsWith("!") ? s.slice(0, -1) : s;
+}
