@@ -74,3 +74,11 @@ function sumOfDifferences(arr) {
   console.log(Math.min(...arr));
   return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 }
+
+function remove(string) {
+  const words = string.split("");
+  const lengths = words.length - 1;
+  const newWord = words.slice(0, lengths).join("");
+
+  return words[lengths] === "!" ? newWord : string;
+}
