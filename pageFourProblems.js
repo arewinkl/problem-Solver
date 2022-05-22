@@ -95,3 +95,19 @@ function remove(string) {
 function remove(s) {
   return s.endsWith("!") ? s.slice(0, -1) : s;
 }
+
+function sumMul(n, m) {
+  let sum = 0;
+
+  let multiples = Math.floor(m / n);
+  for (let i = 1; i <= multiples; i++) {
+    sum += n * i;
+  }
+  if (m == n) {
+    return "INVALID";
+  } else if (m < 0 || n < 0) {
+    return "INVALID";
+  } else {
+    return sum;
+  }
+}
