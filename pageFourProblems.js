@@ -108,7 +108,6 @@ function remove(s) {
 // sumMul(4, -7)  ==> "INVALID"
 function sumMul(n, m) {
   let sum = 0;
-
   let multiples = Math.floor(m / n);
   for (let i = 1; i <= multiples; i++) {
     sum += n * i;
@@ -120,4 +119,13 @@ function sumMul(n, m) {
   } else {
     return sum;
   }
+}
+//? This solution uses a turnery and slightly different math to calculate the ending sum for the solution.
+function sumMul(n, m) {
+  console.log(Math.floor(m / n));
+  console.log(Math.floor(m / n) + 1);
+  console.log(n / 2);
+  return m <= n
+    ? "INVALID"
+    : Math.floor(m / n) * (Math.floor(m / n) + 1) * (n / 2);
 }
