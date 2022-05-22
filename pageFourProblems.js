@@ -91,7 +91,7 @@ function remove(string) {
 
   return words[lengths] === "!" ? newWord : string;
 }
-
+//? This solution uses the .endsWith() to see if the string ends with a '!'. If it does it slices it off, but if not it returns the string as it is.
 function remove(s) {
   return s.endsWith("!") ? s.slice(0, -1) : s;
 }
