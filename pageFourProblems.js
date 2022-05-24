@@ -130,6 +130,7 @@ function sumMul(n, m) {
     : Math.floor(m / n) * (Math.floor(m / n) + 1) * (n / 2);
 }
 
+// Code as fast as you can! You need to double the integer and return it.
 function doubleInteger(i) {
   console.log(i);
   // i will be an integer. Double it and return it.
