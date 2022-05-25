@@ -52,7 +52,7 @@ function finalGrade(exam, projects) {
     return 0;
   }
 }
-
+//? Here is a different way to write the if statements as several turneries.
 const finalGrade = (exam, projects) => {
   return exam > 90 || projects > 10
     ? 100
