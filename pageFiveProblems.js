@@ -16,7 +16,7 @@ function well(x) {
     return "I smell a series!";
   }
 }
-
+//? this creates a variable that counts the number of good in the array. After that it check to return different answers based of the number of goods.
 const well = (x) => {
   const good_count = x.filter((x) => x == "good").length;
   console.log(good_count);
