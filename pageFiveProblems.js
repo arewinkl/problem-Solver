@@ -78,3 +78,7 @@ function billboard(name, price = 30) {
 function billboard(name, price = 30) {
   return name.split("").reduce((sum, letter) => sum + price, 0);
 }
+
+const quarterOf = (month) => {
+  return Math.ceil((month / 12) * 4);
+};
