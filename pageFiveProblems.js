@@ -84,7 +84,7 @@ function billboard(name, price = 30) {
 const quarterOf = (month) => {
   return Math.ceil((month / 12) * 4);
 };
-
+//?This solution is less math and a lot more code to write, but all it does is create if/else statements to see how the month falls into quarters of the year.
 const q = (month) => {
   if (month <= 3) {
     return 1;
