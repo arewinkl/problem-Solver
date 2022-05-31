@@ -74,7 +74,7 @@ function billboard(name, price = 30) {
   });
   return amount;
 }
-
+// this solution reduces the input and then sums all of the prices per letter from there.
 function billboard(name, price = 30) {
   return name.split("").reduce((sum, letter) => sum + price, 0);
 }
