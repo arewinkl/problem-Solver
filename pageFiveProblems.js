@@ -84,3 +84,15 @@ function billboard(name, price = 30) {
 const quarterOf = (month) => {
   return Math.ceil((month / 12) * 4);
 };
+
+const q = (month) => {
+  if (month <= 3) {
+    return 1;
+  } else if (month <= 6) {
+    return 2;
+  } else if (month <= 9) {
+    return 3;
+  } else if (month <= 12) {
+    return 4;
+  }
+};
