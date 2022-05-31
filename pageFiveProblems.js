@@ -62,3 +62,12 @@ const finalGrade = (exam, projects) => {
     ? 75
     : 0;
 };
+
+function billboard(name, price = 30) {
+  const array = name.split("");
+  let amount = 0;
+  array.forEach((x) => {
+    amount += price;
+  });
+  return amount;
+}
