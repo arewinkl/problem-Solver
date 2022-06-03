@@ -96,3 +96,7 @@ const q = (month) => {
     return 4;
   }
 };
+
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
