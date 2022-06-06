@@ -130,6 +130,7 @@ String.prototype.isUpperCase = function () {
   return !/[a-z]/.test(this);
 };
 
+//? This solution test to see if the string is toUpperCase() if so it returns true else it will return false.
 String.prototype.isUpperCase = function () {
   if (this.toString() == this.toUpperCase()) {
     return true;
