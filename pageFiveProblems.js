@@ -153,7 +153,7 @@ function fakeBin(x) {
   }
   return newArray.join("");
 }
-
+//?Thus solution maps over the string and returns a new one that is altered.
 function fakeBin(x) {
   return x
     .split("")
