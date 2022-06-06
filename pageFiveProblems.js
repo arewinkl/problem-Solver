@@ -125,7 +125,7 @@ String.prototype.isUpperCase = function () {
   return sum > 0 ? false : true;
 };
 
-//?
+//? This solution tests to see if any of the string doesn't equal a lowercase letter, if thats true then it returns true, else it will return a false for the solution.
 String.prototype.isUpperCase = function () {
   return !/[a-z]/.test(this);
 };
