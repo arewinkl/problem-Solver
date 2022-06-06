@@ -138,3 +138,16 @@ String.prototype.isUpperCase = function () {
     return false;
   }
 };
+
+function fakeBin(x) {
+  const newArray = [];
+  const nums = x.split("");
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] < 5) {
+      newArray.push(0);
+    } else {
+      newArray.push(1);
+    }
+  }
+  return newArray.join("");
+}
