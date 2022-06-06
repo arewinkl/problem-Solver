@@ -125,6 +125,7 @@ String.prototype.isUpperCase = function () {
   return sum > 0 ? false : true;
 };
 
+//?
 String.prototype.isUpperCase = function () {
   return !/[a-z]/.test(this);
 };
