@@ -7,7 +7,7 @@ function squareSum(numbers) {
   console.log(sum);
   return sum;
 }
-
+//? This solution uses the reducer method and passes in two different parameters (sum, n) it multiplies the n by itself and adds that number to the overall sum which is initially set at 0.
 function squareSum(numbers) {
   return numbers.reduce(function (sum, n) {
     return n * n + sum;
