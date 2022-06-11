@@ -25,7 +25,7 @@ function stairsIn20(s) {
   }
   return sum * 20;
 }
-
+//? This solution uses two different reducers that are nested to get the values for each array and add them together. After that that number is returned once it has been multiplied by 20.
 function stairsIn20(a) {
   return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
 }
