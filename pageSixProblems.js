@@ -29,7 +29,7 @@ function stairsIn20(s) {
 function stairsIn20(a) {
   return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
 }
-
+//? This solution uses the .concat() method that also uses the spread operator to get the values out of each array and them combine them all.
 function stairsIn20(s) {
   var arr = [].concat(...s);
   var newArr = [].concat(...arr);
