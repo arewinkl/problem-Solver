@@ -29,3 +29,9 @@ function stairsIn20(s) {
 function stairsIn20(a) {
   return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
 }
+
+function stairsIn20(s) {
+  var arr = [].concat(...s);
+  var newArr = [].concat(...arr);
+  return newArr.reduce((a, b) => a + b) * 20;
+}
