@@ -60,6 +60,11 @@ for (let i = 0; i < FLAG.length; i += 16) {
   res.push(FLAG.slice(i, i + 16));
 }
 
+// This kata is the first part of a series: Neighbourhood kata collection. If this one is too easy you can try out the harder katas. ;)
+// The neighbourhood of a cell (in a matrix) are cells that are near to it. There are two popular types:
+// The Moore neighborhood are eight cells which surround a given cell
+// The Von Neumann neighborhood are four cells which share a border with the given cell
+
 const get_neighbourhood = function (type, arr, [y, x]) {
   if (!arr[y] || arr[y][x] === undefined) return [];
   const arrType =
