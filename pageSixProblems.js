@@ -35,3 +35,8 @@ function stairsIn20(s) {
   var newArr = [].concat(...arr);
   return newArr.reduce((a, b) => a + b) * 20;
 }
+
+function sayHello(name, city, state) {
+  const fullName = name.join(" ");
+  return `Hello, ${fullName}! Welcome to ${city}, ${state}!`;
+}
