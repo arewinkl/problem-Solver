@@ -91,3 +91,39 @@ const get_neighbourhood = function (type, arr, [y, x]) {
     .map(([e1, e2]) => arr[e1][e2])
     .sort((a, b) => a < b);
 };
+
+function getNeighbourhood(type, matrix, coordinates) {
+  const getCell = (i, j) => {
+    try {
+      return matrix[i][j];
+    } catch {
+      return;
+    }
+  };
+
+  const [i, j] = coordinates;
+
+  if (i < 0 || j < 0 || i > matrix.length - 1 || j > matrix[0].length - 1) {
+    return [];
+  }
+
+  if (type === "moore") {
+    return [
+      getCell(i - 1, j - 1),
+      getCell(i - 1, j),
+      getCell(i - 1, j + 1),
+      getCell(i, j - 1),
+      getCell(i, j + 1),
+      getCell(i + 1, j - 1),
+      getCell(i + 1, j),
+      getCell(i + 1, j + 1),
+    ].filter((s) => s >= 0);
+  } else {
+    return [
+      getCell(i - 1, j),
+      getCell(i, j - 1),
+      getCell(i, j + 1),
+      getCell(i + 1, j),
+    ].filter((s) => s >= 0);
+  }
+}
