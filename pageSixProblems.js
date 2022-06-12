@@ -92,6 +92,7 @@ const get_neighbourhood = function (type, arr, [y, x]) {
     .sort((a, b) => a < b);
 };
 
+//? This is another solution that should be studied, it uses if statements to determine what should be returned.
 function getNeighbourhood(type, matrix, coordinates) {
   const getCell = (i, j) => {
     try {
