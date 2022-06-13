@@ -170,7 +170,10 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
 function iceBrickVolume(r, h, d) {
   return 2 * r * r * (h - d);
 }
-
+// Write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value.
+// Division by zero should return NaN.
+// Write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value.
+// Division by zero should return NaN.
 function remainder(n, m) {
   return n > m ? n % m : m % n;
 }
