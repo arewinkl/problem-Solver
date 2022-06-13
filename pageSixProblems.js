@@ -128,3 +128,8 @@ function getNeighbourhood(type, matrix, coordinates) {
     ].filter((s) => s >= 0);
   }
 }
+
+function sayHello(name) {
+  console.log(name);
+  return `Hello, ${name}`;
+}
