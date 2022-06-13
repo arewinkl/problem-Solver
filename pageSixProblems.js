@@ -153,3 +153,12 @@ function chromosomeCheck(sperm) {
     sperm === "XY" ? "son" : "daughter"
   }.`;
 }
+
+function iceBrickVolume(radius, bottleLength, rimLength) {
+  console.log(radius, bottleLength, rimLength);
+  const iceHeight = bottleLength - rimLength;
+  const width = radius * 2;
+  console.log(iceHeight);
+
+  return (iceHeight * width * width) / 2;
+}
