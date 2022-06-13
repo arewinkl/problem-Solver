@@ -166,3 +166,7 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
 
   return (iceHeight * width * width) / 2;
 }
+
+function iceBrickVolume(r, h, d) {
+  2 * r * r * (h - d);
+}
