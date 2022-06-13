@@ -136,3 +136,10 @@ function sayHello(name) {
   console.log(name);
   return `Hello, ${name}`;
 }
+
+function chromosomeCheck(sperm) {
+  console.log(sperm);
+  return sperm == "XY"
+    ? `Congratulations! You're going to have a son.`
+    : `Congratulations! You're going to have a daughter.`;
+}
