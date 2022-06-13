@@ -147,7 +147,7 @@ function chromosomeCheck(sperm) {
     ? `Congratulations! You're going to have a son.`
     : `Congratulations! You're going to have a daughter.`;
 }
-
+//? This solution takes the peramiter and returns it after destructuring it with a turnary as well.
 function chromosomeCheck(sperm) {
   return `Congratulations! You're going to have a ${
     sperm === "XY" ? "son" : "daughter"
