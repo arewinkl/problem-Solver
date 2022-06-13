@@ -166,7 +166,7 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
 
   return (iceHeight * width * width) / 2;
 }
-
+//? This simplifies the overal equation and then gets doubled.
 function iceBrickVolume(r, h, d) {
   2 * r * r * (h - d);
 }
