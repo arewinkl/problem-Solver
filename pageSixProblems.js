@@ -212,7 +212,10 @@ const updateLight = (current) => {
     green: "yellow",
   }[current];
 };
-
+// Given a number n and two values firstValue and secondValue, build an array of size n filled with firstValue and secondValue alternating.
+// for input:                5, true, false
+// expected result would be: [true, false, true, false, true]
+// Good luck!
 function alternate(n, firstValue, secondValue) {
   const newArray = [];
   for (let i = 1; i <= n; i++) {
