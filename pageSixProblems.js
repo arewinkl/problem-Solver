@@ -227,3 +227,5 @@ function alternate(n, firstValue, secondValue) {
   }
   return newArray;
 }
+
+const alternate = (n, a, b) => (n ? [a, ...alternate(n - 1, b, a)] : []);
