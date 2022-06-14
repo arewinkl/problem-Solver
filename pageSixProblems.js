@@ -181,3 +181,15 @@ function remainder(n, m) {
 function removeChar(str) {
   return str.slice(1, -1);
 }
+
+function updateLight(current) {
+  console.log(current);
+  //your code here!
+  if (current === "green") {
+    return "yellow";
+  } else if (current === "yellow") {
+    return "red";
+  } else {
+    return "green";
+  }
+}
