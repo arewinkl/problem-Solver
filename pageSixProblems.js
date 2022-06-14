@@ -204,3 +204,11 @@ function updateLight(current) {
     ? "yellow"
     : "green";
 }
+
+const updateLight = (current) => {
+  return {
+    red: "green",
+    yellow: "red",
+    green: "yellow",
+  }[current];
+};
