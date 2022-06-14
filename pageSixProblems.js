@@ -204,7 +204,7 @@ function updateLight(current) {
     ? "yellow"
     : "green";
 }
-
+//? This creates an object that returns a specific vallue based on what value current is.
 const updateLight = (current) => {
   return {
     red: "green",
