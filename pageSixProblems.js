@@ -212,3 +212,15 @@ const updateLight = (current) => {
     green: "yellow",
   }[current];
 };
+
+function alternate(n, firstValue, secondValue) {
+  const newArray = [];
+  for (let i = 1; i <= n; i++) {
+    if (i % 2) {
+      newArray.push(firstValue);
+    } else {
+      newArray.push(secondValue);
+    }
+  }
+  return newArray;
+}
