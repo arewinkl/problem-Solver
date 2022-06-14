@@ -229,3 +229,9 @@ function alternate(n, firstValue, secondValue) {
 }
 //TODO This solution is a good one to practice with, it uses a spread opperator and a turnery as well.
 const alternate = (n, a, b) => (n ? [a, ...alternate(n - 1, b, a)] : []);
+//? This solution is another good one to practice since it uses a different form of turnery that creates a value of length from the n parameter.
+function alternate(n, firstValue, secondValue) {
+  return Array.from({ length: n }, (_, i) =>
+    i % 2 === 0 ? firstValue : secondValue
+  );
+}
