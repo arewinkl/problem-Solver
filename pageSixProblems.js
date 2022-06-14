@@ -177,3 +177,7 @@ function iceBrickVolume(r, h, d) {
 function remainder(n, m) {
   return n > m ? n % m : m % n;
 }
+
+function removeChar(str) {
+  return str.slice(1, -1);
+}
