@@ -227,5 +227,5 @@ function alternate(n, firstValue, secondValue) {
   }
   return newArray;
 }
-
+//TODO This solution is a good one to practice with, it uses a spread opperator and a turnery as well.
 const alternate = (n, a, b) => (n ? [a, ...alternate(n - 1, b, a)] : []);
