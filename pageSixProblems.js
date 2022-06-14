@@ -196,7 +196,7 @@ function updateLight(current) {
     return "green";
   }
 }
-
+//? This uses a turnery with an extra step in the turnery to make it solve a problem with three possible outcomes.
 function updateLight(current) {
   return current === "yellow"
     ? "red"
