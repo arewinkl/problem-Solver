@@ -14,7 +14,7 @@ function xor(a, b) {
 function xor(a, b) {
   return a != b;
 }
-
+// Now you have to write a function that takes an argument and returns the square of it.
 function square(a) {
   // Write the "square"-function here
   console.log(a * a);
