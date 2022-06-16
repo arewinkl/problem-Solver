@@ -14,3 +14,9 @@ function xor(a, b) {
 function xor(a, b) {
   return a != b;
 }
+
+function square(a) {
+  // Write the "square"-function here
+  console.log(a * a);
+  return a * a;
+}
