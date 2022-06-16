@@ -10,3 +10,7 @@ function xor(a, b) {
   console.log(a, b);
   return a == b ? false : true;
 }
+
+function xor(a, b) {
+  return a != b;
+}
