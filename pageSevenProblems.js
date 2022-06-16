@@ -10,7 +10,7 @@ function xor(a, b) {
   console.log(a, b);
   return a == b ? false : true;
 }
-
+//? This solution returns a binary answer of true or false if the parameters don't match.
 function xor(a, b) {
   return a != b;
 }
