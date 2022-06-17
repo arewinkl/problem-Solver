@@ -62,7 +62,7 @@ var number = function (array) {
   }
   return newArray;
 };
-
+//? This solution maps over the array and then returns a solution that contains the index value plus one and also that letter from the index.
 function number(arr) {
   return arr.map((e, i) => `${++i}: ${e}`);
 }
