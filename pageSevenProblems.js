@@ -66,3 +66,8 @@ var number = function (array) {
 function number(arr) {
   return arr.map((e, i) => `${++i}: ${e}`);
 }
+
+function checkForFactor(base, factor) {
+  console.log(base, factor);
+  return base % factor == 0 ? true : false;
+}
