@@ -37,3 +37,12 @@ function DNAtoRNA(dna) {
   }
   return newArray.join("");
 }
+
+function DNAtoRNA(dna) {
+  return dna
+    .split("")
+    .map(function (rna) {
+      return rna.replace("T", "U");
+    })
+    .join("");
+}
