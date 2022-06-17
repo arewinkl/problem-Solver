@@ -46,3 +46,14 @@ function DNAtoRNA(dna) {
     })
     .join("");
 }
+
+var number = function (array) {
+  const newArray = [];
+  if (array.length < 1) {
+    return [];
+  }
+  for (let i = 0; i < array.length; i++) {
+    newArray.push(`${i + 1}: ${array[i]}`);
+  }
+  return newArray;
+};
