@@ -62,3 +62,7 @@ var number = function (array) {
   }
   return newArray;
 };
+
+function number(arr) {
+  return arr.map((e, i) => `${++i}: ${e}`);
+}
