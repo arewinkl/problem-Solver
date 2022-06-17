@@ -37,7 +37,7 @@ function DNAtoRNA(dna) {
   }
   return newArray.join("");
 }
-
+//? This solution maps over and replaces the value 'T' with 'U'.
 function DNAtoRNA(dna) {
   return dna
     .split("")
