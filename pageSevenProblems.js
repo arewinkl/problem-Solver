@@ -20,3 +20,17 @@ function square(a) {
   console.log(a * a);
   return a * a;
 }
+
+function DNAtoRNA(dna) {
+  const data = dna.split("");
+
+  const newArray = [];
+  for (let i = 0; i < dna.split("").length; i++) {
+    if (data[i] == "T") {
+      newArray.push("U");
+    } else {
+      newArray.push(data[i]);
+    }
+  }
+  return newArray.join("");
+}
