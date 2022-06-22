@@ -103,3 +103,13 @@ function checkForFactor(base, factor) {
 // Explanation:
 // After placing signs and brackets, the Maximum value obtained from the expression (1+2) * 3 = 9.
 // expressionsMatter(1,1,1)  ==>  return 3
+function expressionMatter(a, b, c) {
+  return Math.max(
+    a + b + c,
+    a * b * c,
+    a * (b + c),
+    (a + b) * c,
+    a + b * c,
+    a * b + c
+  );
+}
