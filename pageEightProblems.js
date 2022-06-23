@@ -22,6 +22,7 @@ Problem: function sixToast(num) {
 // Notes
 // If no button is currently active, return Nothing.
 // If the list is empty, return Nothing.
+//?This solution works by setting res to whatever is being passed in, and if there is ever a situation where they match than you return 'nothing.
 
 function likeOrDislike(buttons) {
   let res = "Nothing";
