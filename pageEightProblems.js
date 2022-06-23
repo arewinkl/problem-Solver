@@ -10,3 +10,17 @@ Problem: function sixToast(num) {
   console.log(num);
   return Math.abs(num - 6);
 }
+
+function likeOrDislike(buttons) {
+  let res = "Nothing";
+  for (let i = 0; i < buttons.length; i++) {
+    if (buttons[i] === res) {
+      res = "Nothing";
+    } else {
+      res = buttons[i];
+      console.log(res);
+    }
+  }
+  console.log(res);
+  return res;
+}
