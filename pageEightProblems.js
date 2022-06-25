@@ -42,3 +42,8 @@ var a = "code";
 var b = "wa.rs";
 console.log(a, b);
 var name = a + b;
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  console.log(dadYearsOld, sonYearsOld);
+  return Math.abs(dadYearsOld - sonYearsOld * 2);
+}
