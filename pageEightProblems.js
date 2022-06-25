@@ -37,3 +37,8 @@ function likeOrDislike(buttons) {
   console.log(res);
   return res;
 }
+
+var a = "code";
+var b = "wa.rs";
+console.log(a, b);
+var name = a + b;
