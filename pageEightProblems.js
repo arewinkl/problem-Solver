@@ -104,7 +104,10 @@ const bmi = (w, h, bmi = w / h / h) =>
 function f(x, y, z) {
   return x * (y + 1) * (z + 1) + y * (z + 1) * (x + 1) + z * (x + 1) * (y + 1);
 }
-
+// Two red beads are placed between every two blue beads. There are N blue beads. After looking at the arrangement below work out the number of red beads.
+// @ @@ @ @@ @ @@ @ @@ @ @@ @
+// Implement count_red_beads(n) (in PHP count_red_beads($n); in Java, Javascript, TypeScript, C, C++ countRedBeads(n)) so that it returns the number of red beads.
+// If there are less than 2 blue beads return 0.
 function countRedBeads(n) {
   console.log(n);
   console.log((n - 1) * 2);
