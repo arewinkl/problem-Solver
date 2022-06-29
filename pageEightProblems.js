@@ -50,3 +50,8 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   console.log(dadYearsOld, sonYearsOld);
   return Math.abs(dadYearsOld - sonYearsOld * 2);
 }
+
+function buildString(...template) {
+  console.log(`I like ${template.join(", ")}!`);
+  return `I like ${template.join(", ")}!`;
+}
