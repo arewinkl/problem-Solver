@@ -104,3 +104,11 @@ const bmi = (w, h, bmi = w / h / h) =>
 function f(x, y, z) {
   return x * (y + 1) * (z + 1) + y * (z + 1) * (x + 1) + z * (x + 1) * (y + 1);
 }
+
+function countRedBeads(n) {
+  console.log(n);
+  console.log((n - 1) * 2);
+  const answer = (n - 1) * 2;
+
+  return answer < 0 ? 0 : answer;
+}
