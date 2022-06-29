@@ -74,7 +74,7 @@ function bmi(weight, height) {
     return "Obese";
   }
 }
-
+//? Here is a solution that uses a turnery for all of the cases.
 function bmi(weight, height) {
   var bmi = weight / (height * height);
 
