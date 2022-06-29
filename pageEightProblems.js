@@ -86,7 +86,7 @@ function bmi(weight, height) {
     ? "Overweight"
     : "Obese";
 }
-
+//TODO This is a great way to create a function that will be stored in a variable.
 const bmi = (w, h, bmi = w / h / h) =>
   bmi <= 18.5
     ? "Underweight"
