@@ -115,3 +115,15 @@ function countRedBeads(n) {
 
   return answer < 0 ? 0 : answer;
 }
+
+function startSmoking(bars, boxes) {
+  var total = (bars * 10 + boxes) * 18;
+
+  for (var i = 1; i < total; i++) {
+    if (i % 5 === 0) {
+      total += 1;
+    }
+  }
+
+  return total;
+}
