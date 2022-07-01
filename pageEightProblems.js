@@ -133,3 +133,7 @@ function startSmoking(bars, boxes) {
 
   return total;
 }
+
+function greet() {
+  return "hello world!";
+}
