@@ -140,3 +140,9 @@ function startSmoking(bars, boxes) {
 function greet() {
   return "hello world!";
 }
+
+function setAlarm(employed, vacation) {
+  console.log(employed, vacation);
+
+  return (employed == true) & (vacation == false) ? true : false;
+}
