@@ -185,7 +185,7 @@ String.prototype.digit = function () {
 // // Integer Division
 // Your Work (Task)
 // You'll have to return a string that contains dots, as many the equation returns. If the result is 0, return the empty string. When it comes to subtraction, the first number will always be greater than or equal to the second number.
-
+//TODO This takes the new variable operator and matches it to operations, then it takes the other new variables left and right and chooses to measure their length and multiply/divide/add/subtract based on what is the operator.This then repeats based on the number returned '.' the correct number of times.
 const dotCalculator = (equation) => {
   const operations = {
     "+": (a, b) => a + b,
