@@ -172,3 +172,6 @@ String.prototype.digit = function () {
   console.log(/^[0-9]+$/.test(this));
   return this > 10 ? false : /^[0-9]+$/.test(this);
 };
+String.prototype.digit = function () {
+  return /^\d$/.test(this);
+};
