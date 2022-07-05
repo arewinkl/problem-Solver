@@ -165,6 +165,7 @@ function closeCompare(a, b, margin = 0) {
   if (a - margin > b) return 1;
   return 0;
 }
+// Implement String#digit? (in Java StringUtils.isDigit(String)), which should return true if given object is a digit (0-9), false otherwise.
 
 String.prototype.digit = function () {
   console.log(this > 10);
