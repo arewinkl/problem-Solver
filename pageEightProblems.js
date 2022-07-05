@@ -176,3 +176,16 @@ String.prototype.digit = function () {
 String.prototype.digit = function () {
   return /^\d$/.test(this);
 };
+
+const dotCalculator = (equation) => {
+  const operations = {
+    "+": (a, b) => a + b,
+    "-": (a, b) => a - b,
+    "*": (a, b) => a * b,
+    "//": (a, b) => a / b,
+  };
+  const [left, operator, right] = equation.split(" ");
+  console.log(left, operator, right);
+  console.log(operations[operator](left.length, right.length));
+  return ".".repeat(operations[operator](left.length, right.length));
+};
