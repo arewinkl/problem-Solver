@@ -172,6 +172,7 @@ String.prototype.digit = function () {
   console.log(/^[0-9]+$/.test(this));
   return this > 10 ? false : /^[0-9]+$/.test(this);
 };
+//?This check if it is a single digit number and if it is it returns true else it returns false.
 String.prototype.digit = function () {
   return /^\d$/.test(this);
 };
