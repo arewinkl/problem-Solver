@@ -165,3 +165,9 @@ function closeCompare(a, b, margin = 0) {
   if (a - margin > b) return 1;
   return 0;
 }
+
+String.prototype.digit = function () {
+  console.log(this > 10);
+  console.log(/^[0-9]+$/.test(this));
+  return this > 10 ? false : /^[0-9]+$/.test(this);
+};
