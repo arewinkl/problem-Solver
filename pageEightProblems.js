@@ -198,3 +198,14 @@ const dotCalculator = (equation) => {
   console.log(operations[operator](left.length, right.length));
   return ".".repeat(operations[operator](left.length, right.length));
 };
+
+function correctTail(bod, tail) {
+  let sub = bod.substr(bod.length - tail.length);
+  console.log(bod, tail, sub);
+
+  if ((sub = tail)) {
+    return true;
+  } else {
+    return false;
+  }
+}
