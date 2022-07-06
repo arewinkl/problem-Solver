@@ -205,9 +205,13 @@ function correctTail(bod, tail) {
   let sub = bod.substr(bod.length - tail.length);
   console.log(bod, tail, sub);
 
-  if ((sub = tail)) {
+  if (sub === tail) {
     return true;
   } else {
     return false;
   }
+}
+//? This is another solution to the problem that returns the end of the string and compares it to the variable tail.
+function correctTail(bod, tail) {
+  return bod[bod.length - 1] === tail;
 }
