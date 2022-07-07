@@ -281,3 +281,17 @@ function scrabbleScore(word) {
 
   return score;
 }
+
+function scrabbleScore(str) {
+  // ...
+  let newStr = str.toLowerCase();
+  let result = 0;
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+  for (let alpha of newStr) {
+    if (alphabet.includes(alpha)) {
+      result += $dict[alpha.toUpperCase()];
+    }
+  }
+  return result;
+}
