@@ -281,7 +281,7 @@ function scrabbleScore(word) {
 
   return score;
 }
-//? Take the stri and split it and check to see if the new variable contains letters that are  in the string.
+//? Take the string and split it and check to see if the new variable contains letters that are  in the string.
 function scrabbleScore(str) {
   let newStr = str.toLowerCase();
   let result = 0;
