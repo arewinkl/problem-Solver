@@ -301,3 +301,6 @@ function addFive(num) {
   var total = num + 5;
   return total;
 }
+function reverseList(arr) {
+  return arr.reverse();
+}
