@@ -301,6 +301,7 @@ function addFive(num) {
   var total = num + 5;
   return total;
 }
+// Write reverseList function that simply reverses lists.
 function reverseList(arr) {
   return arr.reverse();
 }
