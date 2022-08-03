@@ -325,7 +325,7 @@ function countBy(x, n) {
   }
   return z;
 }
-
+// This solution uses a for loop and only pushes the index value multiplied by the variable to the new array
 function countBy(x, n) {
   var z = [];
   for (i = 1; i <= n; i++) {
