@@ -305,3 +305,17 @@ function addFive(num) {
 function reverseList(arr) {
   return arr.reverse();
 }
+
+function countBy(x, n) {
+  let z = [];
+  console.log(x, n);
+
+  for (let y = 0; y <= n; y++) {
+    let p = y * x;
+    console.log(p);
+    if (p >= x) {
+      z.push(p);
+    }
+  }
+  return z;
+}
