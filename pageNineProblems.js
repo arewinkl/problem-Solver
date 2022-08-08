@@ -43,3 +43,5 @@ function rentalCarCost(d) {
     return d * 40 - 50;
   }
 }
+
+const rentalCarCost = (d) => 40 * d - (d > 6 ? 50 : d > 2 ? 20 : 0);
