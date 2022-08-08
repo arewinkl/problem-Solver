@@ -346,7 +346,7 @@ function guessBlue(blueStart, redStart, bluePulled, redPulled) {
 
   return newBlue / total;
 }
-
+//This solution writes the base functions and writes the return as one line of code.
 const guessBlue = (blueStart, redStart, bluePulled, redPulled) => {
   return (
     (blueStart - bluePulled) / (blueStart - bluePulled + (redStart - redPulled))
