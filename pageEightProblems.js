@@ -333,3 +333,11 @@ function countBy(x, n) {
   }
   return z;
 }
+
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  const newBlue = blueStart - bluePulled;
+  const newRed = redStart - redPulled;
+  const total = newBlue + newRed;
+
+  return newBlue / total;
+}
