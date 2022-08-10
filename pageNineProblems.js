@@ -52,3 +52,7 @@ const rentalCarCost = (d) => 40 * d - (d > 6 ? 50 : d > 2 ? 20 : 0);
 // should give a whole number.
 // Your task is to create a function that returns true if the given number is a Wilson prime.
 const amIWilson = (p) => [5, 13, 563].includes(p);
+
+function amIWilson(p) {
+  return p === 5 || p === 13 || p === 563 ? true : false;
+}
