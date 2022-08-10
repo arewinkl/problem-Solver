@@ -45,3 +45,5 @@ function rentalCarCost(d) {
 }
 //? this solutions writes it as a variable function and creates a ternary that passes the argument through 3 potential circumstances.
 const rentalCarCost = (d) => 40 * d - (d > 6 ? 50 : d > 2 ? 20 : 0);
+
+const amIWilson = (p) => [5, 13, 563].includes(p);
