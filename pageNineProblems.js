@@ -78,3 +78,16 @@ function racePodium(blocks) {
   }
   return [second, first, third];
 }
+
+function elevator(left, right, call) {
+  console.log(left, right, call);
+  let decOne = Math.abs(call - left);
+  let decTwo = Math.abs(call - right);
+  console.log(decOne, decTwo);
+
+  if (decOne < decTwo) {
+    return "left";
+  } else {
+    return "right";
+  }
+}
