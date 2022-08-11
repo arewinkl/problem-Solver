@@ -57,3 +57,15 @@ const amIWilson = (p) => [5, 13, 563].includes(p);
 function amIWilson(p) {
   return p === 5 || p === 13 || p === 563 ? true : false;
 }
+
+function racePodium(blocks) {
+  let first = Math.ceil(blocks / 3) + 1;
+  let second = first - 1;
+  let third = blocks - first - second;
+  console.log(first, second, third);
+  if (third == 0) {
+    third = 1;
+    second -= 1;
+  }
+  return [second, first, third];
+}
