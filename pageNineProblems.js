@@ -122,3 +122,12 @@ function fourSeven(n) {
   while (n == 7) return 4;
   return 0;
 }
+
+function fourSeven(n) {
+  // Your Code Here
+  let results = {
+    7: 4,
+    4: 7,
+  };
+  return results[n] || 0;
+}
