@@ -99,5 +99,6 @@ function elevator(left, right, call) {
   }
 }
 
+//? This solution writes the return as a turnery and returns either left or right.
 const elevator = (left, right, call) =>
   Math.abs(call - left) < Math.abs(call - right) ? "left" : "right";
