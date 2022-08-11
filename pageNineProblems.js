@@ -122,7 +122,7 @@ function fourSeven(n) {
   while (n == 7) return 4;
   return 0;
 }
-
+//? This solution creates an object and returns the value if the argument matches the value in the object, or else it simply returns zero.
 function fourSeven(n) {
   // Your Code Here
   let results = {
