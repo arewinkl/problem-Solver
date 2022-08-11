@@ -113,3 +113,9 @@ function arrowArea(a, b) {
   // your code
   return (a * b) / 2 / 2;
 }
+
+function fourSeven(n) {
+  while (n == 4) return 7;
+  while (n == 7) return 4;
+  return 0;
+}
