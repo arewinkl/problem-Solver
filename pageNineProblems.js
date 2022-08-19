@@ -131,3 +131,6 @@ function fourSeven(n) {
   };
   return results[n] || 0;
 }
+
+const unusualFive = () =>
+  ["Putin", "huilo", "lalala", "lalala", "lalala"].length;
