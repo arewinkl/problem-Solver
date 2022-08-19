@@ -137,3 +137,7 @@ function fourSeven(n) {
 // Good luck :)
 const unusualFive = () =>
   ["Putin", "huilo", "lalala", "lalala", "lalala"].length;
+
+function unusualFive() {
+  return "catts".length;
+}
