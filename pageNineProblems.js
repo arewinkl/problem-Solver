@@ -137,7 +137,7 @@ function fourSeven(n) {
 // Good luck :)
 const unusualFive = () =>
   ["Putin", "huilo", "lalala", "lalala", "lalala"].length;
-
+//This is another solution using the length parameter on a string instead of a array.
 function unusualFive() {
   return "catts".length;
 }
