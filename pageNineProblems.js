@@ -141,3 +141,13 @@ const unusualFive = () =>
 function unusualFive() {
   return "catts".length;
 }
+
+function isPythagoreanTriple(integers) {
+  // Good luck friends!
+  console.log(integers);
+  const cow = integers.sort((a, b) => a - b);
+
+  console.log(cow);
+
+  return integers[0] ** 2 + integers[1] ** 2 == integers[2] ** 2;
+}
