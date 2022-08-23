@@ -156,7 +156,7 @@ function isPythagoreanTriple(integers) {
 
   return integers[0] ** 2 + integers[1] ** 2 == integers[2] ** 2;
 }
-
+//! This solution takes the nums parameter and creates three variables a,b,c and gives them each a value from the array which it can run the test on which were explained above.
 function isPythagoreanTriple(nums) {
   const [a, b, c] = nums.sort((a, b) => a - b);
 
