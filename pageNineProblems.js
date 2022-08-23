@@ -156,3 +156,9 @@ function isPythagoreanTriple(integers) {
 
   return integers[0] ** 2 + integers[1] ** 2 == integers[2] ** 2;
 }
+
+function isPythagoreanTriple(nums) {
+  const [a, b, c] = nums.sort((a, b) => a - b);
+
+  return a ** 2 + b ** 2 === c ** 2;
+}
