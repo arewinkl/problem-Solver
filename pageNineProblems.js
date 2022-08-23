@@ -147,6 +147,7 @@ function unusualFive() {
 // c2 = a2 + b2
 // where c is the largest value of a, b, c.
 // For example: a = 3, b = 4, c = 5 forms a pythagorean triple, because 52 = 32 + 42
+//TODO To solve this problem first you need to sort the numbers in the array from smallest to largest, this will allow you to most easily determine if the triangle is a pythagorean triangle. If it is then return true and if not just return false.
 function isPythagoreanTriple(integers) {
   console.log(integers);
   const cow = integers.sort((a, b) => a - b);
