@@ -148,7 +148,6 @@ function unusualFive() {
 // where c is the largest value of a, b, c.
 // For example: a = 3, b = 4, c = 5 forms a pythagorean triple, because 52 = 32 + 42
 function isPythagoreanTriple(integers) {
-  // Good luck friends!
   console.log(integers);
   const cow = integers.sort((a, b) => a - b);
 
