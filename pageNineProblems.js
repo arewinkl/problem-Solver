@@ -176,6 +176,8 @@ function divisibleBy(numbers, divisor) {
   return newArray;
 }
 
+//!This solution filters through the values to see if it is divisible by the divisor. If the value is divisible by the divisor it will result in zero which is true. it will return an array that only has those filtered values left.
 function divisibleBy(numbers, divisor) {
+  console.log(numbers.filter((n) => n % divisor === 0));
   return numbers.filter((n) => n % divisor === 0);
 }
