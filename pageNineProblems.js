@@ -217,3 +217,18 @@ function century(year) {
   }
   return century;
 }
+
+function solution(
+  molarMass1,
+  molarMass2,
+  givenMass1,
+  givenMass2,
+  volume,
+  temp
+) {
+  const R = 0.0082;
+  const Temps = R * (temp + 273.15);
+  const newM = givenMass1 / molarMass1 + givenMass2 / molarMass2;
+  console.log(molarMass1, Temps);
+  return ((Temps * newM) / volume) * 10;
+}
