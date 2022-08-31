@@ -206,7 +206,7 @@ function century(year) {
   console.log(Math.ceil(year / 100));
   return Math.ceil(year / 100);
 }
-
+//? This solution is an extra long way to solve this problem, but it uses a for loop and increases the variable century for every qoo years the year is divisible by (rounded up).
 function century(year) {
   var century = 0;
 
