@@ -206,3 +206,14 @@ function century(year) {
   console.log(Math.ceil(year / 100));
   return Math.ceil(year / 100);
 }
+
+function century(year) {
+  var century = 0;
+
+  for (var i = 0; i < year; i++) {
+    if (i % 100 == 0) {
+      century++;
+    }
+  }
+  return century;
+}
