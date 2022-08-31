@@ -191,7 +191,7 @@ function feast(beast, dish) {
     beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
   );
 }
-
+//? This solution checks to see if the first letter of each string matches and if the length of each string is the same.
 function feast(beast, dish) {
   if (beast[0] == dish[0] && beast[beast.length - 1] == dish[dish.length - 1]) {
     return true;
