@@ -181,3 +181,10 @@ function divisibleBy(numbers, divisor) {
   console.log(numbers.filter((n) => n % divisor === 0));
   return numbers.filter((n) => n % divisor === 0);
 }
+
+function feast(beast, dish) {
+  console.log(beast[0], beast.length - 1);
+  return (
+    beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+  );
+}
