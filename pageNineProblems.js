@@ -275,3 +275,6 @@ function solution(
   console.log(molarMass1, Temps);
   return ((Temps * newM) / volume) * 10;
 }
+
+solution = (m1, m2, M1, M2, v, t) =>
+  ((M1 / m1 + M2 / m2) * 0.082 * (t + 273.15)) / v;
