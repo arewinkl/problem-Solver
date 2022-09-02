@@ -293,3 +293,7 @@ function sumMix(x) {
   console.log(x.map((a) => +a));
   return x.map((a) => +a).reduce((a, b) => a + b, 0);
 }
+
+function grow(x) {
+  return x.reduce((a, b) => a * b);
+}
