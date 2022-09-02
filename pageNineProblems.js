@@ -278,3 +278,13 @@ function solution(
 //? Simplified the math solution to calculate the total pressure.
 solution = (m1, m2, M1, M2, v, t) =>
   ((M1 / m1 + M2 / m2) * 0.082 * (t + 273.15)) / v;
+
+//   Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+// Return your answer as a number.
+function sumMix(x) {
+  const newArray = [];
+  for (let i = 0; i < x.length; i++) {
+    newArray.push(parseInt(x[i]));
+  }
+  return newArray.reduce((a, b) => a + b);
+}
