@@ -14,3 +14,8 @@ function arr(N) {
 //This method uses a spread operator and then uses the keys method to create an array full of all of the numbers less than the argument that is passed in.
 //! The keys that are returned are the index values of the undefined properties that are pushed into the new array.
 const arr = (n = 0) => [...Array(n).keys()];
+//or
+function arr(n = 0) {
+  console.log([...Array(n)]);
+  return [...Array(n).keys()];
+}
