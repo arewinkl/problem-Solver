@@ -11,5 +11,5 @@ function arr(N) {
   console.log(newArray);
   return newArray;
 }
-
+//This method uses a spread operator and then uses the keys method to create an array full of all of the numbers less than the argument that is passed in.
 const arr = (n = 0) => [...Array(n).keys()];
