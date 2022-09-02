@@ -288,3 +288,8 @@ function sumMix(x) {
   }
   return newArray.reduce((a, b) => a + b);
 }
+// This solution maps over the array and by +a you will get an array of all numeric values. Then after you get this you use the reduce to sum all of the numbers in the array.
+function sumMix(x) {
+  console.log(x.map((a) => +a));
+  return x.map((a) => +a).reduce((a, b) => a + b, 0);
+}
