@@ -11,3 +11,5 @@ function arr(N) {
   console.log(newArray);
   return newArray;
 }
+
+const arr = (n = 0) => [...Array(n).keys()];
