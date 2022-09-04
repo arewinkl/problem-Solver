@@ -34,7 +34,7 @@ function weatherInfo(temp) {
   if (c < 0) return c + " is freezing temperature";
   else return c + " is above freezing temperature";
 }
-
+//!Study this style of writing a function and a solution. This creates a function that in its arguments it passes in values from a second function that changes temperatures from far to cel.
 const weatherInfo = (temp, celsius = convertToCelsius(temp)) =>
   `${celsius} is ${celsius > 0 ? "above " : ""}freezing temperature`;
 
