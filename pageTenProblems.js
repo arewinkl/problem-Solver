@@ -39,3 +39,19 @@ const weatherInfo = (temp, celsius = convertToCelsius(temp)) =>
   `${celsius} is ${celsius > 0 ? "above " : ""}freezing temperature`;
 
 const convertToCelsius = (temp) => (temp - 32) * (5 / 9);
+
+function vaporcode(string) {
+  const meow = string.replace(/[^A-Za-z0-9]/g, "");
+  const cat = meow.toUpperCase().split("");
+
+  const newArray = [];
+
+  for (let i = 0; i < meow.length; i++) {
+    if (i < meow.length - 1) {
+      newArray.push(cat[i] + "  ");
+    } else {
+      newArray.push(cat[i]);
+    }
+  }
+  return newArray.join("");
+}
