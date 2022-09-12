@@ -61,7 +61,7 @@ function vaporcode(string) {
   }
   return newArray.join("");
 }
-
+//?This solution makes this a one line solution, and doesn't need to use a for loop or if statement.
 function vaporcode(string) {
   return Array.from(string.replace(/\s+/g, "").toUpperCase()).join("  ");
 }
