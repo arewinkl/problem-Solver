@@ -65,3 +65,14 @@ function vaporcode(string) {
 function vaporcode(string) {
   return Array.from(string.replace(/\s+/g, "").toUpperCase()).join("  ");
 }
+
+function index(array, n) {
+  console.log(array, n);
+  console.log(array.length);
+  if (array.length - 1 >= n) {
+    console.log(array[n] ** n);
+    return array[n] ** n;
+  } else {
+    return -1;
+  }
+}
