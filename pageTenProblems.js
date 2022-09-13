@@ -83,6 +83,7 @@ function index(array, n) {
   }
 }
 
+//! This solution uses the Math.pow() to return the appropriate answer and it is written in a simple single line of code with a turnery statement. if the array[n] doesn't exist it should just return -1.
 function index(array, n) {
   return array.length > n ? Math.pow(array[n], n) : -1;
 }
