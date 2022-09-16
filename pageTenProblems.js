@@ -87,3 +87,10 @@ function index(array, n) {
 function index(array, n) {
   return array.length > n ? Math.pow(array[n], n) : -1;
 }
+
+function mouthSize(animal) {
+  console.log(animal);
+  let cow = animal.toUpperCase();
+  console.log(cow);
+  return cow == "ALLIGATOR" ? "small" : "wide";
+}
