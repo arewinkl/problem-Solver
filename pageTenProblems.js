@@ -126,6 +126,7 @@ function houseNumbersSum(inputArray) {
   return inputArray.slice(0, inputArray.indexOf(0)).reduce((s, v) => s + v, 0);
 }
 
+//? This solution takes the inout array argument and it creates a for loop with two variables created [sum, i ]. if the value is zero it will return sum, and if it doesn't it will add the value to the sum.
 function houseNumbersSum(inputArray) {
   for (let sum = 0, i = 0; ; i++)
     if (inputArray[i] === 0) return sum;
