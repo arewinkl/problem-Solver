@@ -99,3 +99,16 @@ function mouthSize(animal) {
   console.log(cow);
   return cow == "ALLIGATOR" ? "small" : "wide";
 }
+
+function houseNumbersSum(inputArray) {
+  const newArray = [];
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] !== 0) {
+      newArray.push(inputArray[i]);
+    } else {
+      let answer = newArray.reduce((a, b) => a + b, 0);
+      return answer;
+      break;
+    }
+  }
+}
