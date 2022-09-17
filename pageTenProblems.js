@@ -125,3 +125,9 @@ function houseNumbersSum(inputArray) {
 function houseNumbersSum(inputArray) {
   return inputArray.slice(0, inputArray.indexOf(0)).reduce((s, v) => s + v, 0);
 }
+
+function houseNumbersSum(inputArray) {
+  for (let sum = 0, i = 0; ; i++)
+    if (inputArray[i] === 0) return sum;
+    else sum += inputArray[i];
+}
