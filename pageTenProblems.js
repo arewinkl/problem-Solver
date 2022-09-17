@@ -121,6 +121,7 @@ function houseNumbersSum(inputArray) {
   }
 }
 
+//!This solution takes the array [inputArray] and it slices the rest of the array off once it has a value of zero. then it uses the .reduce() to sum all of the digits in that new array after the slice took place.
 function houseNumbersSum(inputArray) {
   return inputArray.slice(0, inputArray.indexOf(0)).reduce((s, v) => s + v, 0);
 }
