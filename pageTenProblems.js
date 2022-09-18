@@ -148,3 +148,8 @@ function modifyMultiply(str, loc, num) {
   }
   return newArray.join("-");
 }
+
+function modifyMultiply(str, loc, num) {
+  console.log((str.split(" ")[loc] + "-").repeat(num).slice(0, -1));
+  return (str.split(" ")[loc] + "-").repeat(num).slice(0, -1);
+}
