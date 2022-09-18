@@ -167,6 +167,7 @@ function squareDigits(num) {
   return parseInt(newArray.join(""));
 }
 
+//! This solution takes the num creates a variable to store the new number as a string. Then it splits it and maps over it, and then return the new number that is joined together.
 function squareDigits(num) {
   var array = num
     .toString()
