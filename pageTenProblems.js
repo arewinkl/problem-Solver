@@ -153,3 +153,13 @@ function modifyMultiply(str, loc, num) {
   console.log((str.split(" ")[loc] + "-").repeat(num).slice(0, -1));
   return (str.split(" ")[loc] + "-").repeat(num).slice(0, -1);
 }
+
+function squareDigits(num) {
+  const newString = num.toString().split("");
+  const newArray = [];
+  for (let i = 0; i < newString.length; i++) {
+    const cow = parseInt(newString[i]) * parseInt(newString[i]);
+    newArray.push(cow.toString());
+  }
+  return parseInt(newArray.join(""));
+}
