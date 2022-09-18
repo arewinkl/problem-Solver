@@ -148,7 +148,7 @@ function modifyMultiply(str, loc, num) {
   }
   return newArray.join("-");
 }
-
+//!This solution takes the string splits it and adds '-'. and then repeat it the correct number of times and removes the last character from the string.
 function modifyMultiply(str, loc, num) {
   console.log((str.split(" ")[loc] + "-").repeat(num).slice(0, -1));
   return (str.split(" ")[loc] + "-").repeat(num).slice(0, -1);
