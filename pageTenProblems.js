@@ -132,3 +132,13 @@ function houseNumbersSum(inputArray) {
     if (inputArray[i] === 0) return sum;
     else sum += inputArray[i];
 }
+
+function modifyMultiply(str, loc, num) {
+  const newWord = str.split(" ")[loc];
+  const newArray = [];
+
+  for (let i = 0; i < num; i++) {
+    newArray.push(newWord);
+  }
+  return newArray.join("-");
+}
