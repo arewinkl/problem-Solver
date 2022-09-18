@@ -166,3 +166,16 @@ function squareDigits(num) {
   }
   return parseInt(newArray.join(""));
 }
+
+function squareDigits(num) {
+  var array = num
+    .toString()
+    .split("")
+    .map((int) => {
+      console.log(int);
+      var i = parseInt(int);
+      return i * i;
+    });
+
+  return parseInt(array.join(""));
+}
