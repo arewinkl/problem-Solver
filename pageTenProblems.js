@@ -195,3 +195,5 @@ function sum() {
     }
   }
 }
+
+const sum = (...xs) => xs.reduce((x, y) => x + y);
