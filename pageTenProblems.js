@@ -195,5 +195,5 @@ function sum() {
     }
   }
 }
-
+//? This solution uses a spread operrator to find the sum of all the arguments. The reduce method allows you to sum all of the values in the array.
 const sum = (...xs) => xs.reduce((x, y) => x + y);
