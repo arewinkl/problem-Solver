@@ -189,6 +189,7 @@ function squareDigits(num) {
 function sum() {
   for (let i = 0, sum = 0; i < arguments.length + 1; i++) {
     if (i < arguments.length) {
+      sum += arguments[i];
     } else {
       return sum;
     }
