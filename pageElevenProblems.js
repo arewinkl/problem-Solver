@@ -17,6 +17,7 @@ function generateShape(integer) {
   return newwerArray.join("").slice(0, -1);
 }
 
+//? This solution returns the correct array with the correct string in the array. But simplifies it to a single line of code, by using the .repeat() function.
 function generateShape(integer) {
   console.log(("+".repeat(integer) + "\n").repeat(integer).slice(0, -1));
   return ("+".repeat(integer) + "\n").repeat(integer).slice(0, -1);
