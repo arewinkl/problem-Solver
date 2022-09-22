@@ -16,3 +16,8 @@ function generateShape(integer) {
   }
   return newwerArray.join("").slice(0, -1);
 }
+
+function generateShape(integer) {
+  console.log(("+".repeat(integer) + "\n").repeat(integer).slice(0, -1));
+  return ("+".repeat(integer) + "\n").repeat(integer).slice(0, -1);
+}
