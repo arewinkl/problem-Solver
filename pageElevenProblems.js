@@ -82,3 +82,9 @@ function howManydays(month) {
       return 31;
   }
 }
+
+function seatsInTheater(nCols, nRows, col, row) {
+  const height = nCols - (col - 1);
+  const width = nRows - row;
+  return height * width;
+}
