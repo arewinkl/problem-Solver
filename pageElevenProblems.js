@@ -83,6 +83,10 @@ function howManydays(month) {
   }
 }
 
+// Example
+// For nCols = 16, nRows = 11, col = 5 and row = 3, the output should be
+// seatsInTheater(nCols, nRows, col, row) === 96
+// Here is what the theater looks like:
 function seatsInTheater(nCols, nRows, col, row) {
   const height = nCols - (col - 1);
   const width = nRows - row;
