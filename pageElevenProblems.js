@@ -23,6 +23,9 @@ function generateShape(integer) {
   return ("+".repeat(integer) + "\n").repeat(integer).slice(0, -1);
 }
 
+// switch is the keyword and n is the variable to switch. case 1 means when n===1. Following the ":" you can add your code for what to do in that case. The keyword break is used as termination - if you forget break, the code will continue running through the other case statements and default until a break appears. default is always entered if you've reached it.
+// In some instances, the switch statement is clearer than the if..else statement.
+// For example, we can write a function to calculate what day today is, like this:
 function howManydays(month) {
   var days;
   switch (month) {
