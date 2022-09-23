@@ -110,3 +110,14 @@ function getDivisorsCnt(n) {
   }
   return newArray.length;
 }
+
+function getDivisorsCnt(n) {
+  for (let i = 0, x = 1; x <= n; x++) {
+    if (n % x === 0) {
+      i++;
+    }
+    if (x == n) {
+      return i;
+    }
+  }
+}
