@@ -92,3 +92,13 @@ function seatsInTheater(nCols, nRows, col, row) {
   const width = nRows - row;
   return height * width;
 }
+
+function getDivisorsCnt(n) {
+  const newArray = [];
+  for (let i = 1; i <= n; i++) {
+    if (n % i == 0) {
+      newArray.push(i);
+    }
+  }
+  return newArray.length;
+}
