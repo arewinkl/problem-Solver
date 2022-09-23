@@ -68,7 +68,7 @@ function howManydays(month) {
   }
   return days;
 }
-
+//This solution eliminates extra lines of code and returns the correct number of days for each month.
 function howManydays(month) {
   switch (month) {
     case 2:
