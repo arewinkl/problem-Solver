@@ -110,7 +110,7 @@ function getDivisorsCnt(n) {
   }
   return newArray.length;
 }
-
+//!This solution takes the number and checks how many numbers it is divisible by and then returns it as a number. The previous example had to push it out of a for loop and isn't the best way to do it, and having the answer returned in the for loop is better.
 function getDivisorsCnt(n) {
   for (let i = 0, x = 1; x <= n; x++) {
     if (n % x === 0) {
