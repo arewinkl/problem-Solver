@@ -137,6 +137,7 @@ var summation = function (num) {
   }
 };
 
+//?This alternative solution places the sum variable outside of the for loop so that it can be simply += instead of needing a if statement to return correct answer.
 var summation = function (num) {
   let sum = 0;
   for (let i = 0; i <= num; i++) {
