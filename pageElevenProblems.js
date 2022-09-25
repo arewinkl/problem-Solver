@@ -145,3 +145,7 @@ var summation = function (num) {
   }
   return sum;
 };
+
+function findAverage(array) {
+  return array.length < 1 ? 0 : array.reduce((x, y) => x + y) / array.length;
+}
