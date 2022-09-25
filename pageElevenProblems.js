@@ -121,3 +121,11 @@ function getDivisorsCnt(n) {
     }
   }
 }
+
+var summation = function (num) {
+  for (let i = 0, x = 0; i <= num; i++) {
+    if (i < num) {
+      x = x + i;
+    } else return x + num;
+  }
+};
