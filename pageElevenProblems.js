@@ -151,3 +151,10 @@ var summation = function (num) {
 function findAverage(array) {
   return array.length < 1 ? 0 : array.reduce((x, y) => x + y) / array.length;
 }
+
+function arrayPlusArray(arr1, arr2) {
+  const one = arr1.reduce((x, y) => x + y);
+  const two = arr2.reduce((x, y) => x + y);
+
+  return one + two;
+}
