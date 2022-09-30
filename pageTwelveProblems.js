@@ -52,6 +52,7 @@ function nameThatNumber(num) {
   }
 }
 
+//?Here is an alternative solution to the nameThatNumber problem that is able to solve the problem in one line of code.
 function nameThatNumber(n) {
   var a = [
       "",
