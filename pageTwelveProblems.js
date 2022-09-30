@@ -101,6 +101,7 @@ function abbrevName(name) {
   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 }
 
+//?This is an alternative solution that is able to skip the step of using the split() function, by mapping over the names and returning the first letter from each word.
 function abbrevName(name) {
   return name
     .split(" ")
