@@ -108,3 +108,7 @@ function abbrevName(name) {
     .map((i) => i[0].toUpperCase())
     .join(".");
 }
+
+function move(position, roll) {
+  return position + roll * 2;
+}
