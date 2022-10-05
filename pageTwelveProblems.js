@@ -130,3 +130,7 @@ function fixTheMeerkat(arr) {
   }
   return answer;
 }
+
+function fixTheMeerkat(arr) {
+  return arr.reverse();
+}
