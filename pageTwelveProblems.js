@@ -117,3 +117,12 @@ function abbrevName(name) {
 function move(position, roll) {
   return position + roll * 2;
 }
+
+function fixTheMeerkat(arr) {
+  const newArray = arr.reverse();
+  const answer = [];
+  for (let i = 0; i < arr.length; i++) {
+    answer.push(newArray[i]);
+  }
+  return answer;
+}
