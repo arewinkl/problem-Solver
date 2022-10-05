@@ -130,7 +130,7 @@ function fixTheMeerkat(arr) {
   }
   return answer;
 }
-
+//?This is the easiest way to solve this problem, but the above solution is another way to solve it with a for loop.
 function fixTheMeerkat(arr) {
   return arr.reverse();
 }
