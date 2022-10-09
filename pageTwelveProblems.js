@@ -148,6 +148,5 @@ function typeOfSum(a, b) {
 
 function isLeapYear(duration, year) {
   const sum = 1 / (duration - Math.floor(duration));
-
   return (year / sum) % 1 == 0;
 }
