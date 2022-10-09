@@ -134,3 +134,8 @@ function fixTheMeerkat(arr) {
 function fixTheMeerkat(arr) {
   return arr.reverse();
 }
+
+function typeOfSum(a, b) {
+  console.log(typeof (a + b));
+  return typeof (a + b);
+}
