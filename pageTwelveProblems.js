@@ -141,7 +141,7 @@ function typeOfSum(a, b) {
   console.log(typeof (a + b));
   return typeof (a + b);
 }
-
+//? This solution evaluates the arguments passed in by using a turnery function.
 function typeOfSum(a, b) {
   return typeof a != "string" && typeof b != "string" ? "number" : "string";
 }
