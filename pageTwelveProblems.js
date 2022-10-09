@@ -136,6 +136,7 @@ function fixTheMeerkat(arr) {
 }
 
 //Return the type of the sum of the two arguments
+//!This solution is simple because it uses the typeof() to evaluate what type the argument is being passed into the function.
 function typeOfSum(a, b) {
   console.log(typeof (a + b));
   return typeof (a + b);
