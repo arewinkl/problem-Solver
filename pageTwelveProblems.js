@@ -141,3 +141,7 @@ function typeOfSum(a, b) {
   console.log(typeof (a + b));
   return typeof (a + b);
 }
+
+function typeOfSum(a, b) {
+  return typeof a != "string" && typeof b != "string" ? "number" : "string";
+}
