@@ -145,3 +145,9 @@ function typeOfSum(a, b) {
 function typeOfSum(a, b) {
   return typeof a != "string" && typeof b != "string" ? "number" : "string";
 }
+
+function isLeapYear(duration, year) {
+  const sum = 1 / (duration - Math.floor(duration));
+
+  return (year / sum) % 1 == 0;
+}
