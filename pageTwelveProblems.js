@@ -135,6 +135,7 @@ function fixTheMeerkat(arr) {
   return arr.reverse();
 }
 
+//Return the type of the sum of the two arguments
 function typeOfSum(a, b) {
   console.log(typeof (a + b));
   return typeof (a + b);
