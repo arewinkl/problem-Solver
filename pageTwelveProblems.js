@@ -222,3 +222,15 @@ function inAscOrder(arr) {
 function inAscOrder(arr) {
   return arr.every((a, b) => b == 0 || arr[b] > arr[b - 1]);
 }
+
+function strCount(str, letter) {
+  let cow = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == letter) {
+      cow++;
+    } else {
+      0;
+    }
+  }
+  return cow;
+}
