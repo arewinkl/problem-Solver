@@ -30,6 +30,8 @@
 //     60, // 60Ω resistor
 //   ]
 
+//Todo This is a difficult solution that I dont fully understand, would be a good one to go back and practice, to see if the solution below makes any sense.cd
+
 function calculateResistance(circuit) {
   let x = rec(circuit);
   if (x == 0) {
