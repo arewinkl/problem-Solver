@@ -250,6 +250,7 @@ function strCount(str, letter) {
   return str.split(letter).length - 1;
 }
 
+//Todo Thus solution takes the arr and splits it, then filters through it and will only return the elements of the array match letter. once that is created from the array it tests to see the length of the new array and that ends up being the answer.
 function strCount(str, letter) {
   return str.split("").filter((a) => a == letter).length;
 }
