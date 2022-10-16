@@ -186,6 +186,8 @@ function countSheeps(arrayOfSheep) {
   return meow;
 }
 
+//? This solution to the problem reduces the array and the variable b== true, then it will add 1 and if not it will add 0 to the variable a. and variable a is initialized with a value of 0.
+
 function countSheeps(arrayOfSheep) {
   let power = arrayOfSheep.reduce((a, b) => a + (b == true ? 1 : 0), 0);
   return power;
