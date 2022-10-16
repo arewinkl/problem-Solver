@@ -218,7 +218,7 @@ function inAscOrder(arr) {
 
   return cow > 0 ? true : false;
 }
-
+//? the array.every() runs a test for each element in the array to make sure that it passes every test.
 function inAscOrder(arr) {
   return arr.every((a, b) => b == 0 || arr[b] > arr[b - 1]);
 }
