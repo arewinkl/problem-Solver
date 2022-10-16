@@ -185,3 +185,8 @@ function countSheeps(arrayOfSheep) {
   }
   return meow;
 }
+
+function countSheeps(arrayOfSheep) {
+  let power = arrayOfSheep.reduce((a, b) => a + (b == true ? 1 : 0), 0);
+  return power;
+}
