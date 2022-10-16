@@ -218,3 +218,7 @@ function inAscOrder(arr) {
 
   return cow > 0 ? true : false;
 }
+
+function inAscOrder(arr) {
+  return arr.every((a, b) => b == 0 || arr[b] > arr[b - 1]);
+}
