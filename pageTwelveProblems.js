@@ -192,3 +192,18 @@ function countSheeps(arrayOfSheep) {
   let power = arrayOfSheep.reduce((a, b) => a + (b == true ? 1 : 0), 0);
   return power;
 }
+
+function inAscOrder(arr) {
+  let cow = 0;
+
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] < arr[i + 1]) {
+      cow++;
+    } else {
+      cow = 0;
+      break;
+    }
+  }
+
+  return cow > 0 ? true : false;
+}
