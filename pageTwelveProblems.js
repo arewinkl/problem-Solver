@@ -245,6 +245,7 @@ function strCount(str, letter) {
   return cow;
 }
 
+//? This solution checks to see how many times the letter appears in the string.
 function strCount(str, letter) {
   return str.split(letter).length - 1;
 }
