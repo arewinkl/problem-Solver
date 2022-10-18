@@ -63,7 +63,24 @@ function rec(circuit) {
     );
   }
 }
-
+// The for loop is a very frequently used loop in JS.
+// Recall in lesson 9 we wrote a while loop:
+// function sum1_100(){
+//   var sum=0,num=1
+//   while (num<=100){
+//     sum+=num;
+//     num++;
+//   }
+//   return sum;
+// }
+// We can rewrite it using a for loop, like this:
+// function sum1_100(){
+//   for (var sum=0,num=1;num<=100;num++){
+//     sum+=num;
+//   }
+//   return sum;
+// }
+// As you see, there are three parts in the parentheses, separated by ";". The first part, var sum=0,num=1, is the initialization. This part will run before the loop starts. The second part, num<=100 is the conditional expression. The conditional expression is checked before the start of each time through the loop. When the value of the expression is false, the loop will be terminated. The third part, num++ will run after the code block, and is usually used for increasing and decreasing variables.
 function pickIt(arr) {
   var odd = [],
     even = [];
