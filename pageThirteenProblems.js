@@ -109,7 +109,7 @@ function multipleOfIndex(array) {
   }
   return newArray;
 }
-
+//? This solution filters through the array and only returns values that are divisible by their index. a is each element in the array and b is the index value for the element in the array.
 function multipleOfIndex(array) {
   return array.filter((a, b) => a % b == 0);
 }
