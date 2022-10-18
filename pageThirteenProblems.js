@@ -113,3 +113,7 @@ function multipleOfIndex(array) {
 function multipleOfIndex(array) {
   return array.filter((a, b) => a % b == 0);
 }
+
+function simpleMultiplication(number) {
+  return number % 2 == 0 ? number * 8 : number * 9;
+}
