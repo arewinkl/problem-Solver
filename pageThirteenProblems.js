@@ -118,3 +118,21 @@ function multipleOfIndex(array) {
 function simpleMultiplication(number) {
   return number % 2 == 0 ? number * 8 : number * 9;
 }
+
+function evalObject(value) {
+  console.log(value.a + value.b, value.operation);
+  switch (value.operation) {
+    case "+":
+      return value.a + value.b;
+    case "-":
+      return value.a - value.b;
+    case "/":
+      return value.a / value.b;
+    case "*":
+      return value.a * value.b;
+    case "%":
+      return value.a % value.b;
+    case "^":
+      return Math.pow(value.a, value.b);
+  }
+}
