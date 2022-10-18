@@ -109,3 +109,7 @@ function multipleOfIndex(array) {
   }
   return newArray;
 }
+
+function multipleOfIndex(array) {
+  return array.filter((a, b) => a % b == 0);
+}
