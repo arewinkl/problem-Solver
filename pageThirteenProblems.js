@@ -191,6 +191,7 @@ function isIsogram(str) {
   return true;
 }
 
+//? This solution takes the new Set() function. It takes the string and replaces it with a specific value as long as that value doesn't already exist. Then it matches it to the original string length and if those two numbers match it means that all of the characters dont repeat in the string.
 function isIsogram(str) {
   return new Set(str.toUpperCase()).size === str.length;
 }
