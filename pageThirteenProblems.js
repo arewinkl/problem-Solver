@@ -158,6 +158,7 @@ function getRealFloor(n) {
   }
 }
 
+//? This solution is the simplest and all it takes is a turnery to determine what answer should be returned.
 function getRealFloor(n) {
   return n >= 13 ? n - 2 : n <= 0 ? n : n - 1;
 }
