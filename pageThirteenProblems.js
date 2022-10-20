@@ -139,3 +139,16 @@ function evalObject(value) {
       return Math.pow(value.a, value.b);
   }
 }
+
+function getRealFloor(n) {
+  console.log(n);
+  if (n < 0 || n == 0) {
+    return n;
+  } else if (n < 13) {
+    return n - 1;
+  } else if (n == 13) {
+    return n - 2;
+  } else if (n > 13) {
+    return n - 2;
+  }
+}
