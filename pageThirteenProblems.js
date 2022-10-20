@@ -174,3 +174,15 @@ function getRealFloor(n) {
 function sum(numbers) {
   return numbers.reduce((a, b) => a + b, 0);
 }
+
+function isIsogram(str) {
+  let newStr = str.toLowerCase();
+  for (var i = 0; i <= newStr.length; i++) {
+    for (var j = i + 1; j <= newStr.length; j++) {
+      if (newStr[j] == newStr[i]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
