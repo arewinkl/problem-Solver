@@ -41,3 +41,9 @@ function sumCircles() {
   }
   return `We have this much circle: ${Math.round(circleSum)}`;
 }
+
+//?This solution takes the argument spread operates it and places it in a one line function to solve. would be a good one to practice repeating.
+const sumCircles = (...ds) =>
+  `We have this much circle: ${Math.round(
+    (Math.PI * ds.reduce((s, d) => s + d * d, 0)) / 4
+  )}`;
