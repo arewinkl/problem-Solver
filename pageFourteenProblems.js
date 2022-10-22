@@ -23,3 +23,13 @@ function howManyGifts(maxBudget, gifts) {
   gifts.sort((a, b) => a - b);
   return gifts.filter((item) => (maxBudget -= item) >= 0).length;
 }
+
+function sumCircles() {
+  let circleSum = 0;
+  let pie = Math.PI;
+  for (let i = 0; i < arguments.length; i++) {
+    let r = arguments[i] / 2;
+    circleSum = circleSum + pie * r ** 2;
+  }
+  return `We have this much circle: ${Math.round(circleSum)}`;
+}
