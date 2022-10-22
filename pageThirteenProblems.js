@@ -203,6 +203,7 @@ function removeExclamationMarks(s) {
   return s.split("!").join("");
 }
 
+//!This solution replaces every ! with a empty string ""
 function removeExclamationMarks(s) {
   return s.replace(/!/g, "");
 }
