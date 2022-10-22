@@ -18,6 +18,7 @@ function howManyGifts(maxBudget, gifts) {
   return totalGifts;
 }
 
+//!This solution sorts the gifts array. and then filters through the array and creates a variable item and adds to it as long as it subratracted from max budget is still greater than zero. Also if the array is empty it will simply set its value to zero.
 function howManyGifts(maxBudget, gifts) {
   gifts.sort((a, b) => a - b);
   return gifts.filter((item) => (maxBudget -= item) >= 0).length;
