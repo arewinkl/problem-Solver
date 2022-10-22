@@ -202,3 +202,7 @@ function removeExclamationMarks(s) {
   console.log(s.split("!").join(""));
   return s.split("!").join("");
 }
+
+function removeExclamationMarks(s) {
+  return s.replace(/!/g, "");
+}
