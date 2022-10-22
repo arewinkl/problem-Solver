@@ -196,6 +196,8 @@ function isIsogram(str) {
   return new Set(str.toUpperCase()).size === str.length;
 }
 
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
 function removeExclamationMarks(s) {
   console.log(s.split("!").join(""));
   return s.split("!").join("");
