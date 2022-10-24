@@ -47,3 +47,10 @@ const sumCircles = (...ds) =>
   `We have this much circle: ${Math.round(
     (Math.PI * ds.reduce((s, d) => s + d * d, 0)) / 4
   )}`;
+
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
+  return (
+    enteredCode === correctCode &&
+    Date.parse(expirationDate) >= Date.parse(currentDate)
+  );
+}
