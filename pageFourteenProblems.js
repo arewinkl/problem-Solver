@@ -72,11 +72,6 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
   return enteredCode === correctCode && ed >= cd;
 }
 
-function Ship(draft, crew) {
-  this.draft = draft;
-  this.crew = crew;
-}
-
 // Ahoy matey!
 // You are a leader of a small pirate crew. And you have a plan. With the help of OOP you wish to make a pretty efficient system to identify ships with a heavy booty on board.
 // Unfortunately for you, people weigh a lot these days, so how do you know if a ship is full of gold and not people?
@@ -89,6 +84,11 @@ function Ship(draft, crew) {
 // draft - an estimate of the ship's weight based on how low it is in the water
 // crew - the count of crew on board
 
+//!This function uses the
+function Ship(draft, crew) {
+  this.draft = draft;
+  this.crew = crew;
+}
 Ship.prototype.isWorthIt = function () {
   return this.draft - this.crew * 1.5 > 20;
 };
