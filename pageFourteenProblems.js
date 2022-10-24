@@ -84,7 +84,7 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
 // draft - an estimate of the ship's weight based on how low it is in the water
 // crew - the count of crew on board
 
-//!This function uses the
+//!This function uses the .prototype method that allows you to add on to an original function and add new variables.
 function Ship(draft, crew) {
   this.draft = draft;
   this.crew = crew;
