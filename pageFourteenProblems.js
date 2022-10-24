@@ -64,3 +64,9 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
     Date.parse(expirationDate) >= Date.parse(currentDate)
   );
 }
+
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
+  var cd = new Date(currentDate);
+  var ed = new Date(expirationDate);
+  return enteredCode === correctCode && ed >= cd;
+}
