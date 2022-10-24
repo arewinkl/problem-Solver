@@ -93,6 +93,8 @@ Ship.prototype.isWorthIt = function () {
   return this.draft - this.crew * 1.5 > 20;
 };
 
+//? This problem takes a different way of solving the problem without the .prototype method and just adds a method inside the original function Ship.
+
 function Ship(draft, crew) {
   this.draft = draft;
   this.crew = crew;
