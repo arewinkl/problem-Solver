@@ -65,6 +65,7 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
   );
 }
 
+//This solution creates variables for the current date, and then uses that to check against what is being passed through the function.
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
   var cd = new Date(currentDate);
   var ed = new Date(expirationDate);
