@@ -131,3 +131,11 @@ function incrementer(nums) {
 function incrementer(num) {
   return num.map((a, i) => (a + i + 1) % 10);
 }
+
+reverse = function (array) {
+  var newArr = [];
+  for (var i = array.length - 1; i >= 0; i--) {
+    newArr.push(array[i]);
+  }
+  return newArr;
+};
