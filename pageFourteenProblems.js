@@ -112,6 +112,7 @@ function Ship(draft, crew) {
 // [1, 2, 3]  -->  [2, 4, 6]   #  [1+1, 2+2, 3+3]
 // [4, 6, 9, 1, 3]  -->  [5, 8, 2, 5, 8]  #  [4+1, 6+2, 9+3, 1+4, 3+5]
 //                                        #  9+3 = 12  -->  2
+//? This solution creates a new array and then returns that after it is put through a for loop to find the correctly incremented number to the array.
 
 function incrementer(nums) {
   let newArray = [];
