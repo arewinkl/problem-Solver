@@ -126,6 +126,7 @@ function incrementer(nums) {
   }
   return newArray;
 }
+//! This solution uses a map function to simply increment through the array. the i variable returns the index value and this simply adds that to the arrays initial value and makes sure it isn't returns only the remainder.
 
 function incrementer(num) {
   return num.map((a, i) => (a + i + 1) % 10);
