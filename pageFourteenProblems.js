@@ -165,4 +165,5 @@ function check(a, x) {
   }
 }
 
+//? This solution takes the array and then it uses the .includes() function to see if the array contains the value x.
 const check = (a, x) => a.includes(x);
