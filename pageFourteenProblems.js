@@ -164,3 +164,5 @@ function check(a, x) {
     return false;
   }
 }
+
+const check = (a, x) => a.includes(x);
