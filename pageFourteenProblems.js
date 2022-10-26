@@ -148,3 +148,15 @@ function reverse(array) {
     return [b].concat(a);
   }, []);
 }
+
+function check(a, x) {
+  let y = 0;
+  for (let i = 0; i < a.length; i++) {
+    a[i] == x ? y++ : 0;
+  }
+  if (y > 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
