@@ -102,3 +102,16 @@ function Ship(draft, crew) {
     return this.draft - this.crew * 1.5 > 20;
   };
 }
+
+function incrementer(nums) {
+  let newArray = [];
+  for (let i = 0; i < nums.length; i++) {
+    let cow = nums[i] + i + 1;
+    if (cow < 10) {
+      newArray.push(cow);
+    } else {
+      newArray.push(cow % 10);
+    }
+  }
+  return newArray;
+}
