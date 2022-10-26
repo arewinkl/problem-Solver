@@ -142,6 +142,7 @@ reverse = function (array) {
   return newArr;
 };
 
+//? This solution uses the reduce function and reverse the position of the elements in the array.
 function reverse(array) {
   return array.reduce(function (a, b) {
     return [b].concat(a);
