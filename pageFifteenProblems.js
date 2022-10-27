@@ -23,9 +23,13 @@ function squares(x, n) {
   return ret;
 }
 
+//!This solution returns a turnery and within the turnery if the number of times to do the function is greater that 0, then it will use the Math.pow() and does it to the second exponent. Then the i represents the index values// so how many times the code should run.
 const squares = (x, n) =>
   n <= 0
     ? []
     : Array(n)
         .fill(x)
         .map((m, i) => Math.pow(m, Math.pow(2, i)));
+
+const solution = (start, finish, difference = finish - start) =>
+  Math.floor(difference / 3) + (difference % 3);
