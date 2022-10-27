@@ -13,6 +13,7 @@ function squares(x, n) {
   return newArray;
 }
 
+//?This solution basically uses the same form but instead of adding the exponents, it just does x *= x which does the sane thing.
 function squares(x, n) {
   var ret = [];
   for (var i = 0; i < n; i++) {
