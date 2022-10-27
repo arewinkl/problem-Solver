@@ -22,3 +22,10 @@ function squares(x, n) {
   }
   return ret;
 }
+
+const squares = (x, n) =>
+  n <= 0
+    ? []
+    : Array(n)
+        .fill(x)
+        .map((m, i) => Math.pow(m, Math.pow(2, i)));
