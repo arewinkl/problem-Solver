@@ -71,7 +71,7 @@ const solution = (start, finish, difference = finish - start) =>
 //   "(}"       =>  False
 //   "[(])"     =>  False
 //   "[({})](]" =>  False
-
+//?This solution uses a simple for loop to test if the current character matches the correct order, detailed in the description. If it doesn't then it will return false, instead of true.
 function validBraces(braces) {
   var matches = { "(": ")", "{": "}", "[": "]" };
   var stack = [];
