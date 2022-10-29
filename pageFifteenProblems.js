@@ -92,6 +92,7 @@ function validBraces(braces) {
   return stack.length === 0; // any unclosed braces left?
 }
 
+//? This uses a switch case to determine if it needs to return false, within the existing for loop.
 function validBraces(braces) {
   for (var i = 0, depth = []; i < braces.length; i++) {
     switch (braces[i]) {
