@@ -114,3 +114,5 @@ function validBraces(braces) {
   }
   return depth.length == 0;
 }
+
+const getSumOfDigits = (int) => [...(int + "")].reduce((a, b) => a + +b, 0);
