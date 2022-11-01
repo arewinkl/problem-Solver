@@ -123,6 +123,7 @@ function validBraces(braces) {
 
 const getSumOfDigits = (int) => [...(int + "")].reduce((a, b) => a + +b, 0);
 
+//?This solution uses a for loop to determine the sim of all of the digits, in the number to see how large a number they create when all added up.
 function getSumOfDigits(integer) {
   var sum = null;
   var digits = Math.floor(integer).toString();
