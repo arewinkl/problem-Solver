@@ -17,7 +17,7 @@ function basicOp(operation, value1, value2) {
     return value1 * value2;
   } else return value1 / value2;
 }
-
+//?This solution uses a switch case instead of a else if statement like the solution above. Not the best answer to the problem, but another way to solve it.
 function basicOp(operation, value1, value2) {
   switch (operation) {
     case "+":
