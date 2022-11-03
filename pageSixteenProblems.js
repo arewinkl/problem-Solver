@@ -31,6 +31,7 @@ function basicOp(operation, value1, value2) {
   }
 }
 
+// The eval() function evaluates JavaScript code represented as a string and returns its completion value. The source is parsed as a script.
 function basicOp(operation, value1, value2) {
   return eval(value1 + operation + value2);
 }
