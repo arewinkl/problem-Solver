@@ -46,3 +46,17 @@ function basicOp(operation, value1, value2) {
 function litres(time) {
   return Math.floor(time * 0.5);
 }
+
+function disemvowel(str) {
+  let newArray = [];
+  let cat = str.split("");
+  for (let i = 0; i < str.length; i++) {
+    if (cat[i].toLowerCase() == "e") {
+    } else if (cat[i].toLowerCase() == "i") {
+    } else if (cat[i].toLowerCase() == "a") {
+    } else if (cat[i].toLowerCase() == "o") {
+    } else if (cat[i].toLowerCase() == "u") {
+    } else newArray.push(cat[i]);
+  }
+  return newArray.join("");
+}
