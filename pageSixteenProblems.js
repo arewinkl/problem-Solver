@@ -71,6 +71,7 @@ function disemvowel(str) {
   return str.replace(/[aeiou]/gi, "");
 }
 
+//? This creates a variable outside of the function and then when the function runs it filters to see if the str contains any vowels and if so it doesnt get returned.
 const vowels = "aeiou";
 
 function disemvowel(str) {
