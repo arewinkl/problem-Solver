@@ -70,3 +70,12 @@ function disemvowel(str) {
 function disemvowel(str) {
   return str.replace(/[aeiou]/gi, "");
 }
+
+const vowels = "aeiou";
+
+function disemvowel(str) {
+  return str
+    .split("")
+    .filter((letter) => !vowels.includes(letter.toLowerCase()))
+    .join("");
+}
