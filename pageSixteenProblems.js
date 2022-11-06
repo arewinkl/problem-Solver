@@ -35,3 +35,7 @@ function basicOp(operation, value1, value2) {
 function basicOp(operation, value1, value2) {
   return eval(value1 + operation + value2);
 }
+
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
