@@ -81,6 +81,9 @@ function disemvowel(str) {
     .join("");
 }
 
+// When provided with a number between 0-9, return it in words.
+// Input :: 1
+// Output :: "One".
 function switchItUp(number) {
   switch (number) {
     case (number = 0):
