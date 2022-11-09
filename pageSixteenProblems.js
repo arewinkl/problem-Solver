@@ -118,7 +118,7 @@ function switchItUp(number) {
       break;
   }
 }
-
+//This solution takes an array of ;possible answers and they corispond with their index value.
 switchItUp = (n) =>
   [
     "Zero",
