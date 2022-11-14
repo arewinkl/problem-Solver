@@ -147,3 +147,7 @@ String.prototype.toAlternatingCase = function () {
     .map((a) => (a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase()))
     .join("");
 };
+
+function howManyLightsabersDoYouOwn(name) {
+  return name == "Zach" ? 18 : 0;
+}
