@@ -244,6 +244,7 @@ function fizzbuzz(n) {
 
 //?This is my attempt at recreating the above solution, it could be done with the while function or it could also be created with a for loop as well.
 function fizzbuzz(n) {
+  //TODO Begin by creating the variable one that you will itterate and one that you will push answers into.
   var i = 1,
     arr = [];
 
