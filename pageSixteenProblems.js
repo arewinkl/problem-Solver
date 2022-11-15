@@ -159,3 +159,12 @@ String.prototype.toAlternatingCase = function () {
 function howManyLightsabersDoYouOwn(name) {
   return name == "Zach" ? 18 : 0;
 }
+
+function spoonerize(words) {
+  let word = words.split(" ");
+  console.log(word[1][0], word[0].slice(1));
+  //This solution first gets the first letter from the second word and places it on the first word after slicing the first letter from that word.
+  return [word[1][0] + word[0].slice(1), word[0][0] + word[1].slice(1)].join(
+    " "
+  );
+}
