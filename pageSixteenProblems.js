@@ -249,9 +249,10 @@ function fizzbuzz(n) {
     arr = [];
   //TODO Secondly create a while loop that will runn as long as i is less than n, and besure to increment i each time.
   while (i <= n) {
+    //TODO thirdly create variables that will test the value of i to see weather it is devisable by 3 or 5.
     var fizzy = i % 3 === 0;
     var buzzy = i % 5 === 0;
-
+    //TODO Fourthly create a if statement that if either of the above variables fizzy or buzzy are true will push to the array fizz, buzz, or fizzbuzz based on the turnery that was created. And finaly return the new array that was created for the answer to this problem.
     if (fizzy || buzzy) {
       arr.push((fizzy ? "Fizz" : "") + (buzzy ? "Buzz" : ""));
     } else arr.push(i);
