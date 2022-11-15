@@ -242,6 +242,7 @@ function fizzbuzz(n) {
   return arr;
 }
 
+//?This is my attempt at recreating the above solution, it could be done with the while function or it could also be created with a for loop as well.
 function fizzbuzz(n) {
   var i = 1,
     arr = [];
