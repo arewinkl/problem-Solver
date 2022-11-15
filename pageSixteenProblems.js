@@ -225,6 +225,7 @@ function fizzbuzz(n) {
   return newArray;
 }
 
+//? This solution creates variables and depending on if the are true or false it will either return fizz, buzz, or both.
 function fizzbuzz(n) {
   var i = 1,
     arr = [];
