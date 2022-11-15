@@ -206,6 +206,7 @@ function numberJoy(n) {
 // N will never be less than 1.
 // Method calling example:
 // fizzbuzz(3) -->  [1, 2, "Fizz"]
+//! This is a great challenge to practice with and is a good test for refactoring code for a quciker answer with less code.
 function fizzbuzz(n) {
   let newArray = [];
   for (let i = 1; i <= n; i++) {
