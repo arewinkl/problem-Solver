@@ -197,3 +197,21 @@ function numberJoy(n) {
   var sr = +s.toString().split("").reverse().join("");
   return s * sr == n;
 }
+
+function fizzbuzz(n) {
+  let newArray = [];
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 == 0) {
+      if (i % 5 == 0) {
+        newArray.push("FizzBuzz");
+      } else {
+        newArray.push("Fizz");
+      }
+    } else if (i % 5 == 0) {
+      newArray.push("Buzz");
+    } else {
+      newArray.push(i);
+    }
+  }
+  return newArray;
+}
