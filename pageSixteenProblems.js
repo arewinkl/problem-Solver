@@ -247,7 +247,7 @@ function fizzbuzz(n) {
   //TODO Begin by creating the variable one that you will itterate and one that you will push answers into.
   var i = 1,
     arr = [];
-
+  //TODO Secondly create a while loop that will runn as long as i is less than n, and besure to increment i each time.
   while (i <= n) {
     var fizzy = i % 3 === 0;
     var buzzy = i % 5 === 0;
