@@ -175,3 +175,10 @@ function spoonerize(words) {
     " "
   );
 }
+
+function spoonerize(words) {
+  let [a, b] = words.split(" ");
+  console.log(a, b)[(a, b)] = [b[0] + a.slice(1), a[0] + b.slice(1)];
+
+  return [a, b].join(" ");
+}
