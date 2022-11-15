@@ -241,3 +241,19 @@ function fizzbuzz(n) {
   }
   return arr;
 }
+
+function fizzbuzz(n) {
+  var i = 1,
+    arr = [];
+
+  while (i <= n) {
+    var fizzy = i % 3 === 0;
+    var buzzy = i % 5 === 0;
+
+    if (fizzy || buzzy) {
+      arr.push((fizzy ? "Fizz" : "") + (buzzy ? "Buzz" : ""));
+    } else arr.push(i);
+    i++;
+  }
+  return arr;
+}
