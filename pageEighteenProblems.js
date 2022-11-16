@@ -25,3 +25,7 @@ const getPositions = (s) => {
   console.log(s, [firstPerson, secondPerson, thirdPerson]);
   return [firstPerson, secondPerson, thirdPerson];
 };
+
+function getPositions(s) {
+  return [s % 3, Math.floor(s / 3) % 3, Math.floor(s / 9) % 3];
+}
