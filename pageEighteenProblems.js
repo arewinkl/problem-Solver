@@ -26,6 +26,7 @@ const getPositions = (s) => {
   return [firstPerson, secondPerson, thirdPerson];
 };
 
+//This solution simplifys by doing all of the math within the return and instead of using math.trunc it uses math.floor.
 function getPositions(s) {
   return [s % 3, Math.floor(s / 3) % 3, Math.floor(s / 9) % 3];
 }
