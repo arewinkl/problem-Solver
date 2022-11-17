@@ -30,3 +30,19 @@ const getPositions = (s) => {
 function getPositions(s) {
   return [s % 3, Math.floor(s / 3) % 3, Math.floor(s / 9) % 3];
 }
+
+function humanReadable(seconds) {
+  let h, rs, m, ss, s;
+
+  rs = seconds % 3600;
+  h =
+    Math.floor(seconds / 3600) < 10
+      ? "0" + Math.floor(seconds / 3600)
+      : Math.floor(seconds / 3600);
+  m =
+    Math.floor(rs / 60) < 10 ? "0" + Math.floor(rs / 60) : Math.floor(rs / 60);
+  ss = seconds - (m * 60 + h * 3600);
+  s = ss < 10 ? "0" + ss : ss;
+
+  return h + ":" + m + ":" + s;
+}
