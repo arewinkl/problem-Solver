@@ -53,6 +53,7 @@ function humanReadable(seconds) {
   return h + ":" + m + ":" + s;
 }
 
+//?This solution is an alternate to the solution to the problem above. This time it maps over the function to determin the length and returns the answers in the correct order. Would be a good one to go back and look at/ practice.
 function humanReadable(seconds) {
   return [seconds / 3600, (seconds % 3600) / 60, seconds % 60]
     .map(function (v) {
