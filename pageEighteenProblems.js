@@ -84,6 +84,7 @@ function saleHotdogs(n) {
   }
 }
 
+//?This is a different way to solve the problem by using a turnery instead of a if else statement.
 function saleHotdogs(n) {
   return n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90;
 }
