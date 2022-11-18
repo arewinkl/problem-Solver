@@ -64,3 +64,4 @@ function humanReadable(seconds) {
 }
 
 //new problem
+//7 katas and harder
