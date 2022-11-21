@@ -95,7 +95,7 @@ function saleHotdogs(n) {
 // reversing s = 91
 // and 19 * 91 = 1729 --> the number that we started with.
 // Complete the function which tests if a positive integer n is Harshad number, and returns True if the product of its digit sum and its digit sum reversed equals n; otherwise return False.
-
+//! in the solution below the n is split into a string and then the reducce function is used to sum all of the numbers, then the sr variable is split and reversed so that the numbers can be multiplied together to determin if they can be summed up to equal the initial value of n.
 function numberJoy(n) {
   var s = n
     .toString()
