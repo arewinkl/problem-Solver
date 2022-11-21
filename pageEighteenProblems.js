@@ -106,3 +106,11 @@ function numberJoy(n) {
 
   console.log(n);
 }
+
+function numberJoy(n) {
+  let numbers = n.toString().split("");
+  let sum = numbers.map(Number).reduce((a, c) => a + c, 0);
+  let reverse = sum.toString().split("").reverse().join("");
+
+  return reverse * sum == n;
+}
