@@ -107,6 +107,7 @@ function numberJoy(n) {
   console.log(n);
 }
 
+//? Similar solution to the one above but seperates everything into variables and passes them into the next variable to answer the problem.
 function numberJoy(n) {
   let numbers = n.toString().split("");
   let sum = numbers.map(Number).reduce((a, c) => a + c, 0);
