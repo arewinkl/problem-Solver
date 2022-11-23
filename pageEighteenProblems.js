@@ -134,6 +134,7 @@ function mostFrequentItemCount(collection) {
   return Math.max(...Object.values(count));
 }
 
+//!This solution spread opperates the data passed in and determins with the filter function if the element exist multiple times and return which element is repeated the most.
 function mostFrequentItemCount(c) {
   return c.length
     ? Math.max(...c.map((x) => c.filter((y) => y == x).length))
