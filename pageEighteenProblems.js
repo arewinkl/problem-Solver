@@ -133,3 +133,9 @@ function mostFrequentItemCount(collection) {
 
   return Math.max(...Object.values(count));
 }
+
+function mostFrequentItemCount(c) {
+  return c.length
+    ? Math.max(...c.map((x) => c.filter((y) => y == x).length))
+    : 0;
+}
