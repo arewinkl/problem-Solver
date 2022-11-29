@@ -152,7 +152,7 @@ function none(arr, fun) {
 // ball2 = new Ball("super");
 // ball1.ballType     //=> "regular"
 // ball2.ballType     //=> "super"
-
+//? This solution takes this.ballType and tries to match it to ballType if those match within the function that it will return regular, else it will push out its own individualized response.
 var Ball = function (ballType) {
   console.log(this.ballType, ballType);
   console.log((this.ballType = ballType || "regular"));
