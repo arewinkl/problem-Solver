@@ -140,3 +140,8 @@ function mostFrequentItemCount(c) {
     ? Math.max(...c.map((x) => c.filter((y) => y == x).length))
     : 0;
 }
+
+function none(arr, fun) {
+  console.log(arr.some(fun));
+  return !arr.some(fun);
+}
