@@ -160,3 +160,9 @@ var Ball = function (ballType) {
   console.log((this.ballType = ballType || "regular"));
   this.ballType = ballType || "regular";
 };
+
+function helloWorld() {
+  var str = "Hello World!";
+  console.log(str);
+  return str;
+}
