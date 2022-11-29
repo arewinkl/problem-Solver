@@ -145,3 +145,9 @@ function none(arr, fun) {
   console.log(arr.some(fun));
   return !arr.some(fun);
 }
+
+var Ball = function (ballType) {
+  console.log(this.ballType, ballType);
+  console.log((this.ballType = ballType || "regular"));
+  this.ballType = ballType || "regular";
+};
