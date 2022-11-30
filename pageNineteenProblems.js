@@ -56,3 +56,8 @@ function mystery() {
   console.log(results.sanity);
   return results;
 }
+
+function otherAngle(a, b) {
+  console.log(a, b);
+  return 180 - (a + b);
+}
