@@ -48,3 +48,9 @@ function findWaldo(crowd) {
     }
   }
 }
+
+function mystery() {
+  var results = { sanity: "Hello" };
+  console.log(results.sanity);
+  return results;
+}
