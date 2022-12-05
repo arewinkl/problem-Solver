@@ -65,3 +65,11 @@ function otherAngle(a, b) {
   console.log(a, b);
   return 180 - (a + b);
 }
+
+function monkeyCount(n) {
+  let newArray = [];
+  for (let i = 1; i < n + 1; i++) {
+    newArray.push(i);
+  }
+  return newArray;
+}
