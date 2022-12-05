@@ -80,6 +80,7 @@ function monkeyCount(n) {
   return newArray;
 }
 
+//!This solution takes the inital number and fills an array with the values for the correct number of monkeys.
 function monkeyCount(n) {
   for (var i = 0, arr = []; i < n; arr.push(++i));
 
