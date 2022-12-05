@@ -79,3 +79,9 @@ function monkeyCount(n) {
   }
   return newArray;
 }
+
+function monkeyCount(n) {
+  for (var i = 0, arr = []; i < n; arr.push(++i));
+
+  return arr;
+}
