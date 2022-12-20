@@ -98,6 +98,7 @@ function hoopCount(n) {
   if (n > 9) return "Great, now move on to tricks";
 }
 
+//? This solution is just as simple as the one above, but it uses a turnery to determin which answer to send to the kid.s
 function hoopCount(n) {
   return n < 10
     ? "Keep at it until you get it"
