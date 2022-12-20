@@ -86,3 +86,9 @@ function monkeyCount(n) {
 
   return arr;
 }
+
+function hoopCount(n) {
+  console.log(n);
+  if (n < 10) return "Keep at it until you get it";
+  if (n > 9) return "Great, now move on to tricks";
+}
